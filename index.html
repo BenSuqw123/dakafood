@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DaKaFoodMap</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <nav>
+        <div class="headpage">
+            <div class="toolbar">
+                <img src="menu.png" alt="icon" class="tool" id="openSlide">
+            </div>
+            <div class="congcu">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="menu.png" alt="icon" class="tool1" id="closeSlide">
+                        </a>
+                    </li>
+                    <br>
+                    <li>
+                        <a href="index.html">
+                            <img src="home.png" alt="icon" class="icon">
+                            <span class="smallitem">Trang Chủ</span>
+                        </a>
+                    </li>
+                    <br>
+                    <li>
+                        <a href="monanno.html"">
+                            <img src=" no.png" alt="icon" class="icon">
+                            <span class="smallitem">Món Ăn No</span>
+                        </a>
+                    </li>
+                    <br>
+                    <li>
+                        <a href="nuocuong.html">
+                            <img src="drink.png" alt="icon" class="icon">
+                            <span class="smallitem">Nước</span>
+                        </a>
+                    </li>
+                    <br>
+                    <li>
+                        <a href="anvat.html">
+                            <img src="cookies.png" alt="icon" class="icon">
+                            <span class="smallitem">Ăn Vặt</span>
+                        </a>
+                    </li>
+                    <br>
+                    <li>
+                        <a href="trangmieng.html">
+                            <img src="dessert.png" alt="icon" class="icon">
+                            <span class="smallitem">Món Tráng Miệng</span>
+                        </a>
+                    </li>
+                    <br>
+                    <li>
+                        <a href="timkiem.html#newshop">
+                            <img src="new.png" alt="icon" class="icon">
+                            <span class="smallitem">Quán Mới</span>
+                        </a>
+                    </li>
+                    <br>
+                    <li>
+                        <a href="timkiem.html#trendshop">
+                            <img src="fire.png" alt="icon" class="icon">
+                            <span class="smallitem">Quán Đang Hot</span>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+            <ul class="flex muc">
+                <li class="logo">
+                    <a href="index.html">
+
+                        <img src="logo.png" alt="logo">
+                    </a>
+                </li>
+
+                <li><a href="index.html">Trang chủ</a></li>
+                <li id="#menutop">
+                    <a href="#">Ăn uống</a>
+                    <div class="menuanuong">
+                        <ul>
+                            <li>
+                                <a href="monanno.html"> Món ăn no</a>
+                            </li>
+                            <li><a href="nuocuong.html">Nước uống</a></li>
+                            <li><a href="anvat.html">Ăn vặt</a></li>
+                            <li><a href="trangmieng.html">Tráng miệng</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="timkiem.html#newshop">Quán mới</a></li>
+                <li><a href="timkiem.html#trendshop">Quán đang hot</a></li>
+                <button id="dangnhap" class="login">Đăng nhập</button>
+                <div class="changeLogin hidden">
+                    <button>
+                        <img
+                            src="https://www.shutterstock.com/image-vector/default-avatar-profile-icon-social-600nw-1677509740.jpg" />
+                    </button>
+
+                    <br>
+                    <span id="username">hi ban</span>
+                    <ul class="information hidden">
+                        <li id="tenuser">Tên: abc123</li>
+                        <li id="diachiuser">Địa chỉ: abc123</li>
+                        <li><a href="?initialPath=%2F&id=%3Ar1o%3A"">Thoát</a></li>
+                    </ul>
+                </div>
+            </ul>
+        </div>
+
+        <div class=" research">
+                                <span class="text1"><strong>TÌM MÓN CÙNG</strong></span>
+                                <span class="text2"><strong>DAKAFOODMAP</strong></span>
+
+                                <img src="wall.png" alt="mô tả">
+
+                                <a href="timkiem.html">
+                                    <div>
+                                        <select id="region" class="selection-box option">
+                                            <option value="Ho Chi Minh">Hồ Chí Minh</option>
+                                            <option value="Quận 1">Quận 1</option>
+                                            <option value="Quận 3">Quận 3</option>
+                                            <option value="Quận 4">Quận 4</option>
+                                            <option value="Quận 5">Quận 5</option>
+                                            <option value="Quận 6">Quận 6</option>
+                                            <option value="Quận 7">Quận 7</option>
+                                            <option value="Quận 8">Quận 8</option>
+                                            <option value="Quận 10">Quận 10</option>
+                                            <option value="Quận 11">Quận 11</option>
+                                            <option value="Quận 12">Quận 12</option>
+                                            <option value="Quận Tân Bình">Quận Tân Bình</option>
+                                            <option value="Quận Bình Tân">Quận Bình Tân</option>
+                                            <option value="Quận Bình Thạnh">Quận Bình Thạnh</option>
+                                            <option value="Quận Tân Phú">Quận Tân Phú</option>
+                                            <option value="Quận Gò Vấp">Quận Gò Vấp</option>
+                                            <option value="Quận Phú Nhuận">Quận Phú Nhuận</option>
+                                            <option value="Huyện Bình Chánh">Huyện Bình Chánh </option>
+                                            <option value="Huyện Cần Giờ">Huyện Cần Giờ</option>
+                                            <option value="Huyện Hóc Môn">Huyện Hóc Môn</option>
+                                            <option value="Huyện Củ Chi">Huyện Củ Chi</option>
+                                            <option value="Huyện Nhà Bè">Huyện Nhà Bè</option>
+
+
+                                        </select>
+                                    </div>
+                                    <div class="search-container">
+                                        <input class="nhapmonan" type="search" id="search"
+                                            placeholder="Bạn có thèm trà sữa, bánh tráng trộn, cơm,.. ko">
+                                        <button type="submit" class="find"><img src="lookupicon.jpg" alt="tim"></button>
+                                    </div>
+                                </a>
+                </div>
+
+
+
+                <div class="bangdangnhap">
+                    <div class="daubang">
+                        <h2>DAKAFOODMAP</h2>
+                        <button id="close" class="close"><img src="exiticon.png" alt="thoat"></button>
+                    </div>
+                    <div class="thanbang">
+                        <h4>Chào mừng bạn đã đến với <strong>DAKAFOODMAP</strong> </h4>
+                        <p>Đăng nhập để nhận được sự phục vụ tốt nhất</p>
+                        <div>
+                            <span>Tên Đăng Nhập</span>
+                            <input id="name" class="name" type="text" id="dangnhap1" placeholder="Nguyễn Văn A">
+                            <br>
+                            <span>Mật Khẩu</span>
+                            <input id="matkhau" class="pass" type="password" placeholder="*********">
+                        </div>
+                        <button id="submit" class="login">submit</button>
+                        <div>
+                            <div>
+                                <span>đăng ký tại đây: </span>
+                                <button id="signup" class="login">sign up</button>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="bangdangki">
+                        <div class="daubang">
+                            <h2>DAKAFOODMAP</h2>
+                            <button id="close2" class="close"><img src="exiticon.png" alt="thoat"></button>
+                        </div>
+                        <div class="thanbang">
+                            <h4>Chào mừng bạn đã đến với <strong>DAKAFOODMAP</strong> </h4>
+                            <p>Mời Bạn Đăng Ký</p>
+                            <div>
+                                <span>Tên Đăng Nhập</span>
+                                <br>
+                                <input id="name1" class="name" type="text" id="dangnhap2" placeholder="Nguyễn Văn A"
+                                    required>
+                                <br>
+                                <span>Mật Khẩu</span>
+                                <br>
+                                <input id="matkhaudk1" class="pass" type="password" placeholder="*********" required>
+                                <br>
+                                <span>Nhập Lại Mật Khẩu</span>
+                                <br>
+                                <input id="matkhaudk2" class="pass" type="password" placeholder="*********" required>
+                                <br>
+                                <span>Nhập khu vục bạn đang ở </span>
+                                <br>
+                                <input id="area" type="text" placeholder="VD: 1,3,5,..." required>
+
+
+                            </div>
+                            <button id="submit1" class="login">submit</button>
+                            <div>
+                                <span>đăng nhập tại đây: </span>
+                                <button id="login" class="login">log in</button>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+    </nav>
+    <br>
+    <section class="flex">
+        <div class="advert">
+            <div class="ad show">
+                <img src="ad4.png" />
+            </div>
+            <div class="ad">
+                <img src="ad1.png" />
+            </div>
+            <div class="ad">
+                <img src="ad2.png" />
+            </div>
+            <div class="ad">
+                <img src="ad3.png" />
+            </div>
+
+            <div class="nut">
+                <button class="prev-btn" onclick="moveSlide(-1)"> &#10094; </button>
+                <button class="next-btn" onclick="moveSlide(1)"> &#10095; </button>
+            </div>
+
+        </div>
+    </section>
+    <button class="btn-scrolltop" onclick="scrollToTop()">
+        <img src="arrow.png" alt="Scroll to Top">
+    </button>
+    <h1><b>NỔI BẬT</b></h1>
+    <main>
+
+        <div class="suggests">
+
+            <div class="suggest">
+                <a href="monanno.html">
+                    <div>
+                        <img src="https://tea-3.lozi.vn/v1/images/resized/category-web-1036-1590396783" />
+                        <h2>Món ăn no</h2>
+                        <p>Hãy để chúng tôi đưa bạn vào một hành trình ẩm thực độc đáo với những món ăn no trứ danh như
+                            Phở,
+                            Bún Bò Huế hay
+                            Cơm Tấm – những món ăn quen thuộc nhưng được biến tấu theo phong cách riêng, mang đến hương
+                            vị
+                            mới lạ<span class="more"> và đặc biệt, tạo nên một trải nghiệm ăn uống thật thú vị và đặc
+                                biệt hấp dẫn.
+                                nhưng vẫn giữ nguyên cái hồn của ẩm thực Việt. Mỗi món ăn đều là sự kết hợp hoàn hảo
+                                giữa vị
+                                ngọt thanh của nước dùng,
+                                độ dai mềm của sợi bún, sợi phở và sự tươi mát của rau sống đi kèm.</span>
+                        </p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="suggest">
+                <a href="nuocuong.html">
+                    <div>
+
+
+                        <p>Mỗi ly nước tại nhà hàng đều được pha chế từ những nguyên liệu chất lượng nhất, giữ nguyên
+                            hương
+                            vị
+                            tự nhiên, tươi mới.
+                            <span class="more">Nếu quý khách muốn một chút nhẹ nhàng, thanh khiết, trà đá và nước chanh
+                                sẽ là lựa chọn lý
+                                tưởng.
+                                Còn nếu cần một chút năng lượng,
+                                hãy thử một ly cà phê đen hoặc cà phê sữa với vị đắng nhẹ, ngọt ngào – thức uống hoàn
+                                hảo để
+                                bắt
+                                đầu
+                                câu chuyện hoặc thư giãn sau một bữa ăn ngon.</span>
+                        </p>
+                        <h2>Nước uống</h2>
+                        <img src="https://tea-3.lozi.vn/v1/images/resized/category-web-1241-1634113900" />
+                    </div>
+                </a>
+            </div>
+
+            <div class="suggest">
+                <a href="anvat.html">
+                    <div>
+                        <img src="https://tea-3.lozi.vn/v1/images/resized/category-web-3-1590571350" />
+                        <h2>Ăn vặt</h2>
+                        <p>Hãy thưởng thức những món ăn vặt quen thuộc nhưng luôn làm xiêu lòng thực khách như chè, bánh
+                            flan,
+                            hay những đĩa trái cây tươi mát.
+                            <span class="more">Mỗi phần ăn đều được chế biến và bày trí cẩn thận, mang đến sự kết hợp
+                                hài hòa giữa vị ngọt
+                                thanh
+                                tao và sự tươi mới, dịu nhẹ. Bánh flan béo ngậy,
+                                mềm mịn tan trong miệng, hay những ly chè mát lạnh, ngọt ngào, sẽ khiến bạn không thể
+                                cưỡng
+                                lại.
+                        </p></span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="suggest">
+                <a href="trangmieng.html">
+                    <div>
+
+                        <p>Thưởng thức chè thanh mát, nơi hương vị ngọt ngào từ đậu xanh, nước cốt dừa béo ngậy hòa
+                            quyện,
+                            tạo
+                            nên cảm giác thư giãn và sảng khoái sau bữa ăn.
+                            <span class="more">Nếu bạn là người yêu thích sự mềm mịn, hãy thử ngay bánh flan mượt mà,
+                                béo thơm với vị
+                                caramel
+                                ngọt
+                                đắng đầy quyến rũ. Ngoài ra,
+                                chúng tôi còn phục vụ các loại trái cây tươi ngon, giúp cân bằng lại vị giác bằng sự
+                                tươi
+                                mát,
+                                sảng
+                                khoái tự nhiên.</span>
+                        </p>
+
+                        <h2>Tráng miệng</h2>
+                        <img src="https://tea-3.lozi.vn/v1/images/resized/category-web-1115-1590396677" />
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+
+
+    </main>
+
+
+
+</body>
+<br>
+<br>
+<footer>
+    <div class="flex1 footer_subject">
+        <div class="subject">
+            <div>
+                <a class="logo1" href="/?initialPath=%2F&id=%3Ar1o%3A">
+                    <div><img src="logo.png" alt="logo"></div>
+                    <h2>DAKAFOODMAP</h2>
+                </a>
+            </div>
+        </div>
+        <div class="subject">
+            <div>
+                <ul>
+                    <li>
+                        <h4>THÔNG TIN LIÊN HỆ:</h4>
+                    </li>
+                    <li>SĐT:</li>
+                    <li>0987654321 (Đăng)</li>
+                    <li>0335415448 (Khánh)</li>
+                </ul>
+                <p>Địa chỉ: Lê Văn Lương, Phước Kiển, Nhà Bè, Tp. Hồ Chí Minh</p>
+                <p>Email: dakafoodmap@gmail.com</p>
+            </div>
+        </div>
+        <div class="subject">
+            <div>
+                <ul>
+                    <li>
+                        <h4>TÌM KIẾM:</h4>
+                    </li>
+                    <li><a href="timkiem.html#newshop">Quán mới</a></li>
+                    <li><a href="timkiem.html#trendshop">Quán đang hot</a></li>
+                    <li><a href="timkiem.html#nearshop">Quán gần đây</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="subject">
+            <div>
+                <ul>
+                    <li>
+                        <h4>Nổi bật:</h4>
+                    </li>
+                    <li><a href="monanno.html">Món ăn no</a></li>
+                    <li><a href="nuocuong.html">Nước uống</a></li>
+                    <li><a href="anvat.html">Ăn vặt</a></li>
+                    <li><a href="trangmieng.html">Tráng miệng</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+</html>

@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DaKaFoodMap</title>
+    <link rel="stylesheet" href="nuocuong.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="nuocuong.js"></script>
+
+</head>
+
+<body>
+    <nav>
+        <div class="headpage">
+            <div class="toolbar">
+                <img src="menu.png" alt="icon" class="tool" id="openSlide">
+            </div>
+            <div class="congcu">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="menu.png" alt="icon" class="tool1" id="closeSlide">
+                        </a>
+                    </li>
+                    <br>
+                    <li>
+                        <a href="index.html">
+                            <img src="home.png" alt="icon" class="icon">
+                            <span class="smallitem">Trang Chủ</span>
+                        </a>
+                    </li>
+                    <br>
+                    <li>
+                        <a href="monanno.html"">
+                            <img src=" no.png" alt="icon" class="icon">
+                            <span class="smallitem">Món Ăn No</span>
+                        </a>
+                    </li>
+                    <br>
+                    <li>
+                        <a href="nuocuong.html">
+                            <img src="drink.png" alt="icon" class="icon">
+                            <span class="smallitem">Nước</span>
+                        </a>
+                    </li>
+                    <br>
+                    <li>
+                        <a href="anvat.html">
+                            <img src="cookies.png" alt="icon" class="icon">
+                            <span class="smallitem">Ăn Vặt</span>
+                        </a>
+                    </li>
+                    <br>
+                    <li>
+                        <a href="trangmieng.html">
+                            <img src="dessert.png" alt="icon" class="icon">
+                            <span class="smallitem">Món Tráng Miệng</span>
+                        </a>
+                    </li>
+                    <br>
+                    <li>
+                        <a href="timkiem.html#newshop">
+                            <img src="new.png" alt="icon" class="icon">
+                            <span class="smallitem">Quán Mới</span>
+                        </a>
+                    </li>
+                    <br>
+                    <li>
+                        <a href="timkiem.html#trendshop">
+                            <img src="fire.png" alt="icon" class="icon">
+                            <span class="smallitem">Quán Đang Hot</span>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+            <ul class="flex muc">
+                <li class="logo">
+                    <a href="index.html">
+
+                        <img src="logo.png" alt="logo">
+                    </a>
+                </li>
+
+                <li><a href="index.html">Trang chủ</a></li>
+                <li id="#menutop">
+                    <a href="#">Ăn uống</a>
+                    <div class="menuanuong">
+                        <ul>
+                            <li>
+                                <a href="monanno.html"> Món ăn no</a>
+                            </li>
+                            <li><a href="nuocuong.html">Nước uống</a></li>
+                            <li><a href="anvat.html">Ăn vặt</a></li>
+                            <li><a href="trangmieng.html">Tráng miệng</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="timkiem.html#newshop">Quán mới</a></li>
+                <li><a href="timkiem.html#trendshop">Quán đang hot</a></li>
+                <button id="dangnhap" class="login">Đăng nhập</button>
+                <div class="changeLogin hidden">
+                    <button>
+                        <img
+                            src="https://www.shutterstock.com/image-vector/default-avatar-profile-icon-social-600nw-1677509740.jpg" />
+                    </button>
+
+                    <br>
+                    <span id="username">hi ban</span>
+                    <ul class="information hidden">
+                        <li id="tenuser">Tên: abc123</li>
+                        <li id="diachiuser">Địa chỉ: abc123</li>
+                        <li><a href="?initialPath=%2F&id=%3Ar1o%3A"">Thoát</a></li>
+                  </ul>
+              </div>
+          </ul>
+      </div>
+
+      <div class=" research">
+                                <span class="text1"><strong>TÌM MÓN CÙNG</strong></span>
+                                <span class="text2"><strong>DAKAFOODMAP</strong></span>
+
+                                <img src="nước uống.png" alt="mô tả">
+
+                                <a href="timkiem.html">
+                                    <div>
+                                        <select id="region" class="selection-box option">
+                                            <option value="Ho Chi Minh">Hồ Chí Minh</option>
+                                            <option value="Quận 1">Quận 1</option>
+                                            <option value="Quận 3">Quận 3</option>
+                                            <option value="Quận 4">Quận 4</option>
+                                            <option value="Quận 5">Quận 5</option>
+                                            <option value="Quận 6">Quận 6</option>
+                                            <option value="Quận 7">Quận 7</option>
+                                            <option value="Quận 8">Quận 8</option>
+                                            <option value="Quận 10">Quận 10</option>
+                                            <option value="Quận 11">Quận 11</option>
+                                            <option value="Quận 12">Quận 12</option>
+                                            <option value="Quận Tân Bình">Quận Tân Bình</option>
+                                            <option value="Quận Bình Tân">Quận Bình Tân</option>
+                                            <option value="Quận Bình Thạnh">Quận Bình Thạnh</option>
+                                            <option value="Quận Tân Phú">Quận Tân Phú</option>
+                                            <option value="Quận Gò Vấp">Quận Gò Vấp</option>
+                                            <option value="Quận Phú Nhuận">Quận Phú Nhuận</option>
+                                            <option value="Huyện Bình Chánh">Huyện Bình Chánh </option>
+                                            <option value="Huyện Cần Giờ">Huyện Cần Giờ</option>
+                                            <option value="Huyện Hóc Môn">Huyện Hóc Môn</option>
+                                            <option value="Huyện Củ Chi">Huyện Củ Chi</option>
+                                            <option value="Huyện Nhà Bè">Huyện Nhà Bè</option>
+
+
+                                        </select>
+                                    </div>
+                                    <div class="search-container">
+                                        <input class="nhapmonan" type="search" id="search"
+                                            placeholder="Bạn có thèm trà sữa, bánh tráng trộn, cơm,.. ko">
+                                        <button type="submit" class="find"><img src="lookupicon.jpg" alt="tim"></button>
+                                    </div>
+                                </a>
+                </div>
+
+
+
+                <div class="bangdangnhap">
+                    <div class="daubang">
+                        <h2>DAKAFOODMAP</h2>
+                        <button id="close" class="close"><img src="exiticon.png" alt="thoat"></button>
+                    </div>
+                    <div class="thanbang">
+                        <h4>Chào mừng bạn đã đến với <strong>DAKAFOODMAP</strong> </h4>
+                        <p>Đăng nhập để nhận được sự phục vụ tốt nhất</p>
+                        <div>
+                            <span>Tên Đăng Nhập</span>
+                            <input id="name" class="name" type="text" id="dangnhap1" placeholder="Nguyễn Văn A">
+                            <br>
+                            <span>Mật Khẩu</span>
+                            <input id="matkhau" class="pass" type="password" placeholder="*********">
+                        </div>
+                        <button id="submit" class="login">submit</button>
+                        <div>
+                            <div>
+                                <span>đăng ký tại đây: </span>
+                                <button id="signup" class="login">sign up</button>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="bangdangki">
+                        <div class="daubang">
+                            <h2>DAKAFOODMAP</h2>
+                            <button id="close2" class="close"><img src="exiticon.png" alt="thoat"></button>
+                        </div>
+                        <div class="thanbang">
+                            <h4>Chào mừng bạn đã đến với <strong>DAKAFOODMAP</strong> </h4>
+                            <p>Mời Bạn Đăng Ký</p>
+                            <div>
+                                <span>Tên Đăng Nhập</span>
+                                <br>
+                                <input id="name1" class="name" type="text" id="dangnhap2" placeholder="Nguyễn Văn A"
+                                    required>
+                                <br>
+                                <span>Mật Khẩu</span>
+                                <br>
+                                <input id="matkhaudk1" class="pass" type="password" placeholder="*********" required>
+                                <br>
+                                <span>Nhập Lại Mật Khẩu</span>
+                                <br>
+                                <input id="matkhaudk2" class="pass" type="password" placeholder="*********" required>
+                                <br>
+                                <span>Nhập khu vục bạn đang ở </span>
+                                <br>
+                                <input id="area" type="text" placeholder="VD: 1,3,5,..." required>
+
+
+                            </div>
+                            <button id="submit1" class="login">submit</button>
+                            <div>
+                                <span>đăng nhập tại đây: </span>
+                                <button id="login" class="login">log in</button>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+    </nav>
+    <button class="btn-scrolltop" onclick="scrollToTop()">
+        <img src="arrow.png" alt="Scroll to Top">
+    </button>
+
+
+
+    <main>
+        <h1>Những quan nổi bật</h1>
+        <div class="menunc">
+            <div class="item ep sinh sua tra cafe tail ruou">
+                <img src="https://lh5.googleusercontent.com/p/AF1QipNYrYEZO5uDyAUhexscw9TFShb5lKHGGRH3hXeG=w408-h240-k-no-pi0.526257-ya112.274605-ro-0.37177527-fo100"
+                    alt="cafe">
+                <div class="fimditem">
+                    <img class="open" src="lookup02.png" alt="icon">
+                </div>
+                <h3>The Workshop Coffee</h3>
+            </div>
+            <div class="ttnc">
+                <h1>The Workshop Coffee</h1>
+                <button class="close"><img src="exiticon.png" alt="thoat"></button>
+
+                <div>
+                    <div class="flex1">
+                        <img src="https://lh5.googleusercontent.com/p/AF1QipNYrYEZO5uDyAUhexscw9TFShb5lKHGGRH3hXeG=w408-h240-k-no-pi0.526257-ya112.274605-ro-0.37177527-fo100"
+                            alt="cafe">
+                        <div>
+                            <p><a href="https://maps.app.goo.gl/fJhFvbeZMGsxDDPj7">Địa chỉ: 27 Ngô Đức Kế, Bến Nghé,
+                                    Quận 1, Hồ Chí Minh 700000</a></p>
+                            <p>Giờ mở cửa: 08:00–21:00</p>
+                            <p>SĐT: 02838246801</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="item ep sinh sua tra cafe tail ruou">
+                <img src="https://lh5.googleusercontent.com/p/AF1QipOKmbmS9AJCQS8S5v_Mi_9NYmh53oTAl4nFQfk1=w203-h270-k-no"
+                    alt="tra sua">
+                <div class="fimditem">
+                    <img class="open" src="lookup02.png" alt="icon">
+                </div>
+                <h3>Trà Sữa Phượng Hoàng</h3>
+            </div>
+            <div class="ttnc">
+                <h1>Trà Sữa Phượng Hoàng</h1>
+                <button class="close"><img src="exiticon.png" alt="thoat"></button>
+
+                <div>
+                    <div class="flex1">
+                        <img src="https://lh5.googleusercontent.com/p/AF1QipOKmbmS9AJCQS8S5v_Mi_9NYmh53oTAl4nFQfk1=w203-h270-k-no"
+                            alt="tra sua">
+                        <div>
+                            <p><a href="https://maps.app.goo.gl/Er4swDJPB1KVCJFs9">Địa chỉ: 317B Đ. Nguyễn Tri Phương,
+                                    Phường 5, Quận 10, Hồ Chí Minh, Việt Nam</a></p>
+                            <p>Giờ mở cửa: 10:00–22:00</p>
+                            <p>SĐT: 0378999731</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="item ep sinh sua tra cafe tail ruou">
+                <img src="https://lh5.googleusercontent.com/p/AF1QipNmBact-h-HYmF2eULfeT38jJ3p1Ip1mfr_qW7N=w408-h272-k-no"
+                    alt="cocktail">
+                <div class="fimditem">
+                    <img class="open" src="lookup02.png" alt="icon">
+                </div>
+                <h3>Loop 1 - Cocktail Bar & Kitchen</h3>
+            </div>
+            <div class="ttnc">
+                <h1>Loop 1 - Cocktail Bar & Kitchen</h1>
+                <button class="close"><img src="exiticon.png" alt="thoat"></button>
+
+                <div>
+                    <div class=" flex1">
+                        <img src="https://lh5.googleusercontent.com/p/AF1QipNmBact-h-HYmF2eULfeT38jJ3p1Ip1mfr_qW7N=w408-h272-k-no"
+                            alt="cocktail">
+                        <div>
+                            <p><a href="https://maps.app.goo.gl/4UjNoVv2h33vAcq99">Địa chỉ: Lý Tự Trọng/39 Ward, Bến
+                                    Nghé, Quận 1, Hồ Chí Minh 700000, Việt Nam</a></p>
+                            <p>Giờ mở cửa: 17:00–01:00</p>
+                            <p>SĐT: 0919115910</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <!-- danh sach mon nuoc -->
+        <div>
+            <select id="dsmonnc" class="dsmon option">
+                <option value="All" selected>Tất cả</option>
+                <option value="ep">Nước ép</option>
+                <option value="sinh">Sinh tố</option>
+                <option value="sua">Trà sữa</option>
+                <option value="tra">Trà</option>
+                <option value="cafe">Cà phê</option>
+                <option value="tail">Cocktail</option>
+                <option value="ruou">Rượu bia</option>
+            </select>
+        </div>
+
+
+        <div class="menunc">
+            <div class="item ep">
+                <img src="https://lh5.googleusercontent.com/p/AF1QipOkcB3nL_xRGGlX5T0oxU2nG5LJ3Ym3t4eFSqIN=w203-h202-k-no"
+                    alt="nuoc ep">
+                <div class="fimditem">
+                    <img class="open" src="lookup02.png" alt="icon">
+                </div>
+                <h3>Nước ép 100 Vị</h3>
+            </div>
+            <div class="ttnc">
+                <h1>Nước ép 100 Vị</h1>
+                <button class="close"><img src="exiticon.png" alt="thoat"></button>
+
+                <div>
+                    <div class="flex1">
+                        <img src="https://lh5.googleusercontent.com/p/AF1QipOkcB3nL_xRGGlX5T0oxU2nG5LJ3Ym3t4eFSqIN=w203-h202-k-no"
+                            alt="nuoc ep">
+                        <div>
+                            <p><a href="https://maps.app.goo.gl/Pq6oATKvXN8VyVft6">Địa chỉ: 596/1A Nguyễn Đình Chiểu,
+                                    Phường 2, Quận 3, Hồ Chí Minh, Việt Nam
+                                </a></p>
+                            <p>Giờ mở cửa: 08:00–23:00</p>
+                            <p>SĐT: 0898420623</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="item sinh">
+                <img src="https://lh5.googleusercontent.com/p/AF1QipMl8B1KTk_rx4HQBcdBIDjFLeTrlHNGE65MZKAh=w203-h203-k-no"
+                    alt="sinh to">
+                <div class="fimditem">
+                    <img class="open" src="lookup02.png" alt="icon">
+                </div>
+                <h3>Sinh tố 800 - Vietnamese Smoothies</h3>
+            </div>
+            <div class="ttnc">
+                <h1>Sinh tố 800 - Vietnamese Smoothies</h1>
+                <button class="close"><img src="exiticon.png" alt="thoat"></button>
+
+                <div>
+                    <div class="flex1">
+                        <img src="https://lh5.googleusercontent.com/p/AF1QipMl8B1KTk_rx4HQBcdBIDjFLeTrlHNGE65MZKAh=w203-h203-k-no"
+                            alt="sinh to">
+                        <div>
+                            <p><a href="https://maps.app.goo.gl/Cix4EUnnB5iadVJ49">Địa chỉ: Huỳnh Tấn Phát, Phú Thuận,
+                                    Quận 7, Hồ Chí Minh, Việt Nam
+                                </a></p>
+                            <p>Giờ mở cửa: 16:00–23:30</p>
+                            <p>SĐT: 0985920375</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item tra">
+                <img src="https://lh5.googleusercontent.com/p/AF1QipOBvG_9kXh3gNVWzoklRM6Q_7WR8xSKNC5UYzwD=w203-h135-k-no"
+                    alt="Tra">
+                <div class="fimditem">
+                    <img class="open" src="lookup02.png" alt="icon">
+                </div>
+                <h3>Tiệm Trà Quận 7
+                </h3>
+            </div>
+            <div class="ttnc">
+                <h1>Tiệm Trà Quận 7
+                </h1>
+                <button class="close"><img src="exiticon.png" alt="thoat"></button>
+
+                <div>
+                    <div class="flex1">
+                        <img src="https://lh5.googleusercontent.com/p/AF1QipOBvG_9kXh3gNVWzoklRM6Q_7WR8xSKNC5UYzwD=w203-h135-k-no"
+                            alt="Tra">
+                        <div>
+                            <p><a href="https://maps.app.goo.gl/WstAR2xZrEzNm1VbA">Địa chỉ: Đường 15B/10 167, Khu Phố 2,
+                                    Quận 7, Hồ Chí Minh, Việt Nam
+                                </a></p>
+                            <p>Giờ mở cửa: 06:00–22:00
+                            </p>
+                            <p>SĐT: 0971300048</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="menunc">
+            <div class="item ruou">
+                <img src="https://lh5.googleusercontent.com/p/AF1QipPxyHb1FzL-DkJ2zHFfpC2zfcclq6aFbAstxAL2=w408-h544-k-no"
+                    alt="ruou">
+                <div class="fimditem">
+                    <img class="open" src="lookup02.png" alt="icon">
+                </div>
+                <h3>Hội Ngộ 420</h3>
+            </div>
+            <div class="ttnc">
+                <h1>Hội Ngộ 420</h1>
+                <button class="close"><img src="exiticon.png" alt="thoat"></button>
+
+                <div>
+                    <div class="flex1">
+                        <img src="https://lh5.googleusercontent.com/p/AF1QipPxyHb1FzL-DkJ2zHFfpC2zfcclq6aFbAstxAL2=w408-h544-k-no"
+                            alt="ruou">
+                        <div>
+                            <p><a href="https://maps.app.goo.gl/EVeYKxZuxjK6deU19">Địa chỉ: 420 Đ. Trường Sa, Phường 2,
+                                    Phú Nhuận, Hồ Chí Minh 700000, Việt Nam
+                                </a></p>
+                            <p>Giờ mở cửa: Mở cửa cả ngày
+                            </p>
+                            <p>SĐT: 0343986852</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="item ep">
+                <img src="https://lh5.googleusercontent.com/p/AF1QipPd7A-n8GvTCGuGdmna8Zd5Hlz8zTzmX5newOqE=w203-h270-k-no"
+                    alt="nuoc ep">
+                <div class="fimditem">
+                    <img class="open" src="lookup02.png" alt="icon">
+                </div>
+                <h3>O.Juice Nước Ép Trái Cây Đóng Chai
+                </h3>
+            </div>
+            <div class="ttnc">
+                <h1>O.Juice Nước Ép Trái Cây Đóng Chai
+                </h1>
+                <button class="close"><img src="exiticon.png" alt="thoat"></button>
+
+                <div>
+                    <div class="flex1">
+                        <img src="https://lh5.googleusercontent.com/p/AF1QipPd7A-n8GvTCGuGdmna8Zd5Hlz8zTzmX5newOqE=w203-h270-k-no"
+                            alt="nuoc ep">
+                        <div>
+                            <p><a href="https://maps.app.goo.gl/MLTnDE7k5TYDD3vR6">Địa chỉ:48 Nội khu Hưng Phước 1, Tân
+                                    Phong, Quận 7, Hồ Chí Minh 700000, Việt Nam
+                                </a></p>
+                            <p>Giờ mở cửa: 06:30–21:00
+                            </p>
+                            <p>SĐT: 0931799977</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="item sinh">
+                <img src="https://lh5.googleusercontent.com/p/AF1QipO2KvfBVdP4UlfLcLLMMHWHnFAJiwrYiiU_BK0f=w203-h325-k-no"
+                    alt="sinh to">
+                <div class="fimditem">
+                    <img class="open" src="lookup02.png" alt="icon">
+                </div>
+                <h3>Sinh tố 167 Thành Thái
+                </h3>
+            </div>
+            <div class="ttnc">
+                <h1>Sinh tố 167 Thành Thái
+                </h1>
+                <button class="close"><img src="exiticon.png" alt="thoat"></button>
+
+                <div>
+                    <div class=" flex1">
+                        <img src="https://lh5.googleusercontent.com/p/AF1QipO2KvfBVdP4UlfLcLLMMHWHnFAJiwrYiiU_BK0f=w203-h325-k-no"
+                            alt="sinh to">
+                        <div>
+                            <p><a href="https://maps.app.goo.gl/SgPTQFZ43fMPGahP6">Địa chỉ: 167 Đ. Thành Thái, Phường
+                                    14, Quận 10, Hồ Chí Minh, Việt Nam
+                                </a></p>
+                            <p>Giờ mở cửa: 10:00–01:00
+                            </p>
+                            <p>SĐT: 0938174451</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="menunc">
+            <div class="item sua">
+                <img src="https://lh5.googleusercontent.com/p/AF1QipM_Equk7uVdqy4YXmP6ZNPUcc3tVf95KImWuSol=w203-h151-k-no"
+                    alt="tra sua">
+                <div class="fimditem">
+                    <img class="open" src="lookup02.png" alt="icon">
+                </div>
+                <h3>Trà sữa Gấu Mập
+                </h3>
+            </div>
+            <div class="ttnc">
+                <h1>Trà sữa Gấu Mập
+                </h1>
+                <button class="close"><img src="exiticon.png" alt="thoat"></button>
+
+                <div>
+                    <div class="flex1">
+                        <img src="https://lh5.googleusercontent.com/p/AF1QipM_Equk7uVdqy4YXmP6ZNPUcc3tVf95KImWuSol=w203-h151-k-no"
+                            alt="tra sua">
+                        <div>
+                            <p><a href="https://maps.app.goo.gl/GjFS9af6qEWpoSc16">Địa chỉ: 2A - 2B Đ. Số 10, Bình Hưng,
+                                    Bình Chánh, Hồ Chí Minh, Việt Nam
+                                </a></p>
+                            <p>Giờ mở cửa: 12:30–21:30
+                            </p>
+                            <p>SĐT: 0901358848</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="item tra">
+                <img src="https://minismart.net/wp-content/uploads/2019/08/foody-mobile-foody-mobile-chia-jp.jpg"
+                    alt="tra">
+                <div class="fimditem">
+                    <img class="open" src="lookup02.png" alt="icon">
+                </div>
+                <h3>Trà bí đao Quận 7
+                </h3>
+            </div>
+            <div class="ttnc">
+                <h1>Trà bí đao Quận 7
+                </h1>
+                <button class="close"><img src="exiticon.png" alt="thoat"></button>
+
+                <div>
+                    <div class="flex1">
+                        <img src="https://minismart.net/wp-content/uploads/2019/08/foody-mobile-foody-mobile-chia-jp.jpg"
+                            alt="tra">
+                        <div>
+                            <p><a href="https://maps.app.goo.gl/9KcYkdpSZR75SShi9">Địa chỉ: 105a Phạm Hữu Lầu, Phú Mỹ,
+                                    Quận 7, Hồ Chí Minh, Việt Nam
+                                </a></p>
+                            <p>Giờ mở cửa: 06:00–22:00
+                            </p>
+                            <p>SĐT: 0931577375</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="item cafe">
+                <img src="https://lh5.googleusercontent.com/p/AF1QipPZNaPZt6H7-XP44FVG0uj9gq_vkPga8v0Gxp-z=w203-h114-k-no"
+                    alt="cafe">
+                <div class="fimditem">
+                    <img class="open" src="lookup02.png" alt="icon">
+                </div>
+                <h3>Tuan Coffee
+                </h3>
+            </div>
+            <div class="ttnc">
+                <h1>Tuan Coffee
+                </h1>
+                <button class="close"><img src="exiticon.png" alt="thoat"></button>
+
+                <div>
+                    <div class=" flex1">
+                        <img src="https://lh5.googleusercontent.com/p/AF1QipPZNaPZt6H7-XP44FVG0uj9gq_vkPga8v0Gxp-z=w203-h114-k-no"
+                            alt="cafe">
+                        <div>
+                            <p><a href="https://maps.app.goo.gl/aPongRVbSYh2Tofe9">Địa chỉ: 1053 Đ. Lê Văn Lương, Phước
+                                    Kiển, Nhà Bè, Hồ Chí Minh, Việt Nam
+                                </a></p>
+                            <p>Giờ mở cửa: 06:00–21:00
+                            </p>
+                            <p>SĐT: 0989016940</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="menunc">
+            <div class="item tail">
+                <img src="https://lh5.googleusercontent.com/p/AF1QipPI-mFYBGQdhuAoP_D3Ck7b1GqLE2rVKkg1hthY=w203-h270-k-no"
+                    alt="cocktail">
+                <div class="fimditem">
+                    <img class="open" src="lookup02.png" alt="icon">
+                </div>
+                <h3>Spritz: Italian Kitchen & Cocktail Lounge
+                </h3>
+            </div>
+            <div class="ttnc">
+                <h1>Spritz: Italian Kitchen & Cocktail Lounge
+                </h1>
+                <button class="close"><img src="exiticon.png" alt="thoat"></button>
+
+                <div>
+                    <div class="flex1">
+                        <img src="https://lh5.googleusercontent.com/p/AF1QipPI-mFYBGQdhuAoP_D3Ck7b1GqLE2rVKkg1hthY=w203-h270-k-no"
+                            alt="cocktail">
+                        <div>
+                            <p><a href="https://maps.app.goo.gl/nbsniDaJHAqwB3fGA">Địa chỉ: M5, 01 Midtown, Nguyễn Lương
+                                    Bằng, Tân Phú, Quận 7, Hồ Chí Minh 700000, Việt Nam
+                                </a></p>
+                            <p>Giờ mở cửa: 11:30–23:30
+                            </p>
+                            <p>SĐT: 0901684145</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="item ruou">
+                <img src="https://lh5.googleusercontent.com/p/AF1QipMabAcR6pqpsJQG7zpYCV43wxl2ThCbYvvrWzrz=w203-h270-k-no"
+                    alt="ruou">
+                <div class="fimditem">
+                    <img class="open" src="lookup02.png" alt="icon">
+                </div>
+                <h3>Quán nhậu Ok Bà Dzà
+                </h3>
+            </div>
+            <div class="ttnc">
+                <h1>Quán nhậu Ok Bà Dzà
+                </h1>
+                <button class="close"><img src="exiticon.png" alt="thoat"></button>
+
+                <div>
+                    <div class="flex1">
+                        <img src="https://lh5.googleusercontent.com/p/AF1QipMabAcR6pqpsJQG7zpYCV43wxl2ThCbYvvrWzrz=w203-h270-k-no"
+                            alt="ruou">
+                        <div>
+                            <p><a href="https://maps.app.goo.gl/MHUhndxgTmm6E6m27">Địa chỉ: 74 Đ. Nguyễn Cư Trinh,
+                                    Phường Phạm Ngũ Lão, Quận 1, Hồ Chí Minh, Việt Nam
+                                </a></p>
+                            <p>Giờ mở cửa: 17:00–01:00
+                            </p>
+                            <p>SĐT: 0931913931</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="item ep">
+                <img src="https://lh5.googleusercontent.com/p/AF1QipMw-_c9wNkSmK5GUI0QLscswSJoH1h0NsAvBsbs=w224-h298-k-no"
+                    alt="nuoc ep">
+                <div class="fimditem">
+                    <img class="open" src="lookup02.png" alt="icon">
+                </div>
+                <h3>Cherry Juice
+                </h3>
+            </div>
+            <div class="ttnc">
+                <h1>Cherry Juice
+                </h1>
+                <button class="close"><img src="exiticon.png" alt="thoat"></button>
+
+                <div>
+                    <div class=" flex1">
+                        <img src="https://lh5.googleusercontent.com/p/AF1QipMw-_c9wNkSmK5GUI0QLscswSJoH1h0NsAvBsbs=w224-h298-k-no"
+                            alt="nuoc ep">
+                        <div>
+                            <p><a href="https://maps.app.goo.gl/s2xjgymUxAr9Phdp7">Địa chỉ: 684/31 Đ. Trần Hưng Đạo,
+                                    Phường 2, Quận 5, Hồ Chí Minh, Việt Nam
+                                </a></p>
+                            <p>Giờ mở cửa: Mở cửa cả ngày
+                            </p>
+                            <p>SĐT: 0869827995</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="menunc">
+            <div class="item sinh">
+                <img src="https://lh5.googleusercontent.com/p/AF1QipNysBvjb-K1QQ2hz7jbsOBSRHz6l0fJgp2GadhT=w203-h270-k-no"
+                    alt="sinh to">
+                <div class="fimditem">
+                    <img class="open" src="lookup02.png" alt="icon">
+                </div>
+                <h3>Sinh tố Vân 2
+                </h3>
+            </div>
+            <div class="ttnc">
+                <h1>Sinh tố Vân 2
+                </h1>
+                <button class="close"><img src="exiticon.png" alt="thoat"></button>
+
+                <div>
+                    <div class="flex1">
+                        <img src="https://lh5.googleusercontent.com/p/AF1QipNysBvjb-K1QQ2hz7jbsOBSRHz6l0fJgp2GadhT=w203-h270-k-no"
+                            alt="sinh to">
+                        <div>
+                            <p><a href="https://maps.app.goo.gl/pAjaNwzNJQCV7UGQA">Địa chỉ: 94/23 Võ Oanh, Phường 25,
+                                    Bình Thạnh, Hồ Chí Minh, Việt Nam
+                                </a></p>
+                            <p>Giờ mở cửa: 08:00–21:00</p>
+                            <p>SĐT: 0332210010</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="item sua">
+                <img src="https://lh5.googleusercontent.com/p/AF1QipPYLvuepMNJmpUh0CfRY4I6sYhUM6dfpemtaQM8=w203-h270-k-no"
+                    alt="tra sua">
+                <div class="fimditem">
+                    <img class="open" src="lookup02.png" alt="icon">
+                </div>
+                <h3>Trà sữa Tạ Tuyết Ngân
+                </h3>
+            </div>
+            <div class="ttnc">
+                <h1>Trà sữa Tạ Tuyết Ngân
+                </h1>
+                <button class="close"><img src="exiticon.png" alt="thoat"></button>
+
+                <div>
+                    <div class="flex1">
+                        <img src="https://lh5.googleusercontent.com/p/AF1QipPYLvuepMNJmpUh0CfRY4I6sYhUM6dfpemtaQM8=w203-h270-k-no"
+                            alt="tra sua">
+                        <div>
+                            <p><a href="https://maps.app.goo.gl/yYF3abGPUhoAra2D8">Địa chỉ: 308/10/8 Đ. Nguyễn Tri
+                                    Phương, Phường 4, Quận 10, Hồ Chí Minh, Việt Nam
+                                </a></p>
+                            <p>Giờ mở cửa: 06:00–21:00
+                            </p>
+                            <p>SĐT: 0772068662</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="item tra">
+                <img src="https://lh5.googleusercontent.com/p/AF1QipMHIaY8JG--JUjNpdi9gqkwtAxvFEqo1jgVSyCQ=w203-h152-k-no"
+                    alt="tra">
+                <div class="fimditem">
+                    <img class="open" src="lookup02.png" alt="icon">
+                </div>
+                <h3>Only Tea Trà Đào Dầm CMT8
+                </h3>
+            </div>
+            <div class="ttnc">
+                <h1>Only Tea Trà Đào Dầm CMT8
+                </h1>
+                <button class="close"><img src="exiticon.png" alt="thoat"></button>
+
+                <div>
+                    <div class=" flex1">
+                        <img src="https://lh5.googleusercontent.com/p/AF1QipMHIaY8JG--JUjNpdi9gqkwtAxvFEqo1jgVSyCQ=w203-h152-k-no"
+                            alt="tra">
+                        <div>
+                            <p><a href="https://maps.app.goo.gl/YujFaKS65y5kGoYdA">Địa chỉ: 77 Đ. Cách Mạng Tháng 8,
+                                    Phường 11, Quận 3, Hồ Chí Minh 70000, Việt Nam
+                                </a></p>
+                            <p>Giờ mở cửa: Mở cửa cả ngày
+                            </p>
+                            <p>SĐT: 0903683675</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="menunc">
+            <div class="item cafe">
+                <img src="https://lh5.googleusercontent.com/p/AF1QipNNXe_mBNgrVXkGUnJmGHwhsA1dGUd3fZBago-l=w203-h270-k-no"
+                    alt="cafe">
+                <div class="fimditem">
+                    <img class="open" src="lookup02.png" alt="icon">
+                </div>
+                <h3>Xào Xạc cafe & plants
+                </h3>
+            </div>
+            <div class="ttnc">
+                <h1>Xào Xạc cafe & plants
+                </h1>
+                <button class="close"><img src="exiticon.png" alt="thoat"></button>
+
+                <div>
+                    <div class="flex1">
+                        <img src="https://lh5.googleusercontent.com/p/AF1QipNNXe_mBNgrVXkGUnJmGHwhsA1dGUd3fZBago-l=w203-h270-k-no"
+                            alt="cafe">
+                        <div>
+                            <p><a href="https://maps.app.goo.gl/N3Ntd2zY4yH7SkU58">Địa chỉ: 453/15 Nguyễn Đình Chiểu,
+                                    Phường 5, Quận 3, Hồ Chí Minh, Việt Nam
+                                </a></p>
+                            <p>Giờ mở cửa: 07:00–22:00
+                            </p>
+                            <p>SĐT: 0934502163</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="item tail">
+                <img src="https://lh5.googleusercontent.com/p/AF1QipNUkrbJhoJXKV945AQz5oal2TdPLD7_zaEMsKWp=w447-h298-k-no"
+                    alt="cocktail">
+                <div class="fimditem">
+                    <img class="open" src="lookup02.png" alt="icon">
+                </div>
+                <h3>The Iron Bank - Cocktail Vault
+                </h3>
+            </div>
+            <div class="ttnc">
+                <h1>The Iron Bank - Cocktail Vault
+                </h1>
+                <button class="close"><img src="exiticon.png" alt="thoat"></button>
+
+                <div>
+                    <div class="flex1">
+                        <img src="https://lh5.googleusercontent.com/p/AF1QipNUkrbJhoJXKV945AQz5oal2TdPLD7_zaEMsKWp=w447-h298-k-no"
+                            alt="cocktail">
+                        <div>
+                            <p><a href="https://maps.app.goo.gl/sjrB1EZDguCqjmRGA">Địa chỉ: 47 Tôn Thất Đạm, Phường
+                                    Nguyễn Thái Bình, Quận 1, Hồ Chí Minh, Việt Nam
+                                </a></p>
+                            <p>Giờ mở cửa: 17:00–01:00
+                            </p>
+                            <p>SĐT: 0903135250</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="item ruou">
+                <img src="https://lh5.googleusercontent.com/p/AF1QipMr_sWCZiNQyzQy2HlCq7h2KCyyjulwXx4_cGUO=w203-h114-k-no"
+                    alt="ruou">
+                <div class="fimditem">
+                    <img class="open" src="lookup02.png" alt="icon">
+                </div>
+                <h3>Quán Nhậu Hùng 33
+                </h3>
+            </div>
+            <div class="ttnc">
+                <h1>Quán Nhậu Hùng 33
+                </h1>
+                <button class="close"><img src="exiticon.png" alt="thoat"></button>
+
+                <div>
+                    <div class=" flex1">
+                        <img src="https://lh5.googleusercontent.com/p/AF1QipMr_sWCZiNQyzQy2HlCq7h2KCyyjulwXx4_cGUO=w203-h114-k-no"
+                            alt="ruou">
+                        <div>
+                            <p><a href="https://maps.app.goo.gl/npYsgPj24eotF52B7">Địa chỉ: 111C Đ. Hoàng Sa, Đa Kao,
+                                    Quận 1, Hồ Chí Minh 700000, Việt Nam
+                                </a></p>
+                            <p>Giờ mở cửa: 11:00–05:30
+                            </p>
+                            <p>SĐT: 0901363165</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="menunc">
+            <div class="item cafe">
+                <img src="https://lh5.googleusercontent.com/p/AF1QipPtfnjzUzRm7iFt-yAaqBCD2mEGIHkbzxo92kfm=w435-h298-k-no"
+                    alt="cafe">
+                <div class="fimditem">
+                    <img class="open" src="lookup02.png" alt="icon">
+                </div>
+                <h3>Miyama Cafe
+                </h3>
+            </div>
+            <div class="ttnc">
+                <h1>Miyama Cafe
+                </h1>
+                <button class="close"><img src="exiticon.png" alt="thoat"></button>
+
+                <div>
+                    <div class="flex1">
+                        <img src="https://lh5.googleusercontent.com/p/AF1QipPtfnjzUzRm7iFt-yAaqBCD2mEGIHkbzxo92kfm=w435-h298-k-no"
+                            alt="cafe">
+                        <div>
+                            <p><a href="https://maps.app.goo.gl/wKsWga2gTotUcZSJ7">Địa chỉ: Saigon Center, 65 Đ. Lê Lợi,
+                                    St, Ward, Hồ Chí Minh 71006, Việt Nam
+                                </a></p>
+                            <p>Giờ mở cửa: 09:30–21:00
+                            </p>
+                            <p>SĐT: 02822531076</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="item sua">
+                <img src="https://lh5.googleusercontent.com/p/AF1QipO7eYZJnTlCThJ3iWeEgD8j7PmabQudDJTLvpEq=w203-h270-k-no"
+                    alt="tra sua">
+                <div class="fimditem">
+                    <img class="open" src="lookup02.png" alt="icon">
+                </div>
+                <h3>Trà Sữa Tiên Hưởng</h3>
+            </div>
+            <div class="ttnc">
+                <h1>Trà Sữa Tiên Hưởng</h1>
+                <button class="close"><img src="exiticon.png" alt="thoat"></button>
+
+                <div>
+                    <div class="flex1">
+                        <img src="https://lh5.googleusercontent.com/p/AF1QipO7eYZJnTlCThJ3iWeEgD8j7PmabQudDJTLvpEq=w203-h270-k-no"
+                            alt="tra sua">
+                        <div>
+                            <p><a href="https://maps.app.goo.gl/xnH3yae1bQqHVU658">Địa chỉ: 60A Đ. Tản Đà, Phường 11,
+                                    Quận 5, Hồ Chí Minh, Việt Nam
+                                </a></p>
+                            <p>Giờ mở cửa: 08:00–23:00
+                            </p>
+                            <p>SĐT: 02838539199</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="item tail">
+                <img src="https://lh5.googleusercontent.com/p/AF1QipOzQ4FFwxyUoEWNPiGnS2jn7LNccxpbTmrSzv2q=w408-h271-k-no"
+                    alt="cocktail">
+                <div class="fimditem">
+                    <img class="open" src="lookup02.png" alt="icon">
+                </div>
+                <h3>Dot Drinkery & Kitchen
+                </h3>
+            </div>
+            <div class="ttnc">
+                <h1>Dot Drinkery & Kitchen
+                </h1>
+                <button class="close"><img src="exiticon.png" alt="thoat"></button>
+
+                <div>
+                    <div class=" flex1">
+                        <img src="https://lh5.googleusercontent.com/p/AF1QipOzQ4FFwxyUoEWNPiGnS2jn7LNccxpbTmrSzv2q=w408-h271-k-no"
+                            alt="cocktail">
+                        <div>
+                            <p><a href="https://maps.app.goo.gl/D5PC2cH3tuyXQzcC6">Địa chỉ: 75 Hai Bà Trưng, Bến Nghé,
+                                    Quận 1, Hồ Chí Minh 70000, Việt Nam
+                                </a></p>
+                            <p>Giờ mở cửa: 17:00–01:30
+                            </p>
+                            <p>SĐT: 0769123420</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+</body>
+<footer>
+    <div class="flex1 footer_subject">
+        <div class="subject">
+            <div>
+                <a class="logo1" href="/?initialPath=%2F&id=%3Ar1o%3A">
+                    <div><img src="logo.png" alt="logo"></div>
+                    <h2>DAKAFOODMAP</h2>
+                </a>
+            </div>
+        </div>
+        <div class="subject">
+            <div>
+                <ul>
+                    <li>
+                        <h4>THÔNG TIN LIÊN HỆ:</h4>
+                    </li>
+                    <li>SĐT:</li>
+                    <li>0987654321 (Đăng)</li>
+                    <li>0335415448 (Khánh)</li>
+                </ul>
+                <p>Địa chỉ: Lê Văn Lương, Phước Kiển, Nhà Bè, Tp. Hồ Chí Minh</p>
+                <p>Email: dakafoodmap@gmail.com</p>
+            </div>
+        </div>
+        <div class="subject">
+            <div>
+                <ul>
+                    <li>
+                        <h4>TÌM KIẾM:</h4>
+                    </li>
+                    <li><a href="timkiem.html#newshop">Quán mới</a></li>
+                    <li><a href="timkiem.html#trendshop">Quán đang hot</a></li>
+                    <li><a href="timkiem.html#nearshop">Quán gần đây</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="subject">
+            <div>
+                <ul>
+                    <li>
+                        <h4>Nổi bật:</h4>
+                    </li>
+                    <li><a href="monanno.html">Món ăn no</a></li>
+                    <li><a href="nuocuong.html">Nước uống</a></li>
+                    <li><a href="anvat.html">Ăn vặt</a></li>
+                    <li><a href="trangmieng.html">Tráng miệng</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+</html>

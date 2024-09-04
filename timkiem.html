@@ -1,0 +1,1197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DaKaFoodMap</title>
+    <link rel="stylesheet" href="timkiem.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="timkiem.js"></script>
+</head>
+
+<body>
+
+    <nav>
+        <div class="headpage">
+            <div class="toolbar">
+                <img src="menu.png" alt="icon" class="tool" id="openSlide">
+            </div>
+            <div class="congcu">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="menu.png" alt="icon" class="tool1" id="closeSlide">
+                        </a>
+                    </li>
+                    <br>
+                    <li>
+                        <a href="index.html">
+                            <img src="home.png" alt="icon" class="icon">
+                            <span class="smallitem">Trang Chủ</span>
+                        </a>
+                    </li>
+                    <br>
+                    <li>
+                        <a href="monanno.html"">
+                            <img src=" no.png" alt="icon" class="icon">
+                            <span class="smallitem">Món Ăn No</span>
+                        </a>
+                    </li>
+                    <br>
+                    <li>
+                        <a href="nuocuong.html">
+                            <img src="drink.png" alt="icon" class="icon">
+                            <span class="smallitem">Nước</span>
+                        </a>
+                    </li>
+                    <br>
+                    <li>
+                        <a href="anvat.html">
+                            <img src="cookies.png" alt="icon" class="icon">
+                            <span class="smallitem">Ăn Vặt</span>
+                        </a>
+                    </li>
+                    <br>
+                    <li>
+                        <a href="trangmieng.html">
+                            <img src="dessert.png" alt="icon" class="icon">
+                            <span class="smallitem">Món Tráng Miệng</span>
+                        </a>
+                    </li>
+                    <br>
+                    <li>
+                        <a href="timkiem.html#newshop">
+                            <img src="new.png" alt="icon" class="icon">
+                            <span class="smallitem">Quán Mới</span>
+                        </a>
+                    </li>
+                    <br>
+                    <li>
+                        <a href="timkiem.html#trendshop">
+                            <img src="fire.png" alt="icon" class="icon">
+                            <span class="smallitem">Quán Đang Hot</span>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+            <ul class="flex muc">
+                <li class="logo">
+                    <a href="index.html">
+
+                        <img src="logo.png" alt="logo">
+                    </a>
+                </li>
+
+                <li><a href="index.html">Trang chủ</a></li>
+                <li id="#menutop">
+                    <a href="#">Ăn uống</a>
+                    <div class="menuanuong">
+                        <ul>
+                            <li>
+                                <a href="monanno.html"> Món ăn no</a>
+                            </li>
+                            <li><a href="nuocuong.html">Nước uống</a></li>
+                            <li><a href="anvat.html">Ăn vặt</a></li>
+                            <li><a href="trangmieng.html">Tráng miệng</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#newshop">Quán mới</a></li>
+                <li><a href="#trendshop">Quán đang hot</a></li>
+                <button id="dangnhap" class="login">Đăng nhập</button>
+                <div class="changeLogin hidden">
+                    <button>
+                        <img
+                            src="https://www.shutterstock.com/image-vector/default-avatar-profile-icon-social-600nw-1677509740.jpg" />
+                    </button>
+
+                    <br>
+                    <span id="username">hi ban</span>
+                    <ul class="information hidden">
+                        <li id="tenuser">Tên: abc123</li>
+                        <li id="diachiuser">Địa chỉ: abc123</li>
+                        <li><a href="?initialPath=%2F&id=%3Ar1o%3A"">Thoát</a></li>
+                    </ul>
+                </div>
+            </ul>
+        </div>
+
+        <div class=" research">
+                                <span class="text1"><strong>TÌM MÓN CÙNG</strong></span>
+                                <span class="text2"><strong>DAKAFOODMAP</strong></span>
+
+                                <img src="findwall.jpg" alt="mô tả">
+
+                                <div>
+                                    <select id="region" class="selection-box option">
+                                        <option value="Ho Chi Minh" selected>Hồ Chí Minh</option>
+                                        <option value="Quận 1">Quận 1</option>
+                                        <option value="Quận 3">Quận 3</option>
+                                        <option value="Quận 4">Quận 4</option>
+                                        <option value="Quận 5">Quận 5</option>
+                                        <option value="Quận 6">Quận 6</option>
+                                        <option value="Quận 7">Quận 7</option>
+                                        <option value="Quận 8">Quận 8</option>
+                                        <option value="Quận 10">Quận 10</option>
+                                        <option value="Quận 11">Quận 11</option>
+                                        <option value="Quận 12">Quận 12</option>
+                                        <option value="Quận Tân Bình">Quận Tân Bình</option>
+                                        <option value="Quận Bình Tân">Quận Bình Tân</option>
+                                        <option value="Quận Bình Thạnh">Quận Bình Thạnh</option>
+                                        <option value="Quận Tân Phú">Quận Tân Phú</option>
+                                        <option value="Quận Gò Vấp">Quận Gò Vấp</option>
+                                        <option value="Quận Phú Nhuận">Quận Phú Nhuận</option>
+                                        <option value="Huyện Bình Chánh">Huyện Bình Chánh </option>
+                                        <option value="Huyện Cần Giờ">Huyện Cần Giờ</option>
+                                        <option value="Huyện Hóc Môn">Huyện Hóc Môn</option>
+                                        <option value="Huyện Củ Chi">Huyện Củ Chi</option>
+                                        <option value="Huyện Nhà Bè">Huyện Nhà Bè</option>
+
+
+                                    </select>
+                                </div>
+                                <div class="search-container">
+                                    <input class="nhapmonan" type="search" id="search"
+                                        placeholder="Bạn có thèm trà sữa, bánh tráng trộn, cơm,.. ko">
+                                    <button type="submit" id="finds" class="find"><img src="lookupicon.jpg"
+                                            alt="tim"></button>
+                                </div>
+                </div>
+
+
+
+                <div class="bangdangnhap">
+                    <div class="daubang">
+                        <h2>DAKAFOODMAP</h2>
+                        <button id="close" class="close"><img src="exiticon.png" alt="thoat"></button>
+                    </div>
+                    <div class="thanbang">
+                        <h4>Chào mừng bạn đã đến với <strong>DAKAFOODMAP</strong> </h4>
+                        <p>Đăng nhập để nhận được sự phục vụ tốt nhất</p>
+                        <div>
+                            <span>Tên Đăng Nhập</span>
+                            <input id="name" class="name" type="text" id="dangnhap1" placeholder="Nguyễn Văn A">
+                            <br>
+                            <span>Mật Khẩu</span>
+                            <input id="matkhau" class="pass" type="password" placeholder="*********">
+                        </div>
+                        <button id="submit" class="login">submit</button>
+                        <div>
+                            <div>
+                                <span>đăng ký tại đây: </span>
+                                <button id="signup" class="login">sign up</button>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="bangdangki">
+                        <div class="daubang">
+                            <h2>DAKAFOODMAP</h2>
+                            <button id="close2" class="close"><img src="exiticon.png" alt="thoat"></button>
+                        </div>
+                        <div class="thanbang">
+                            <h4>Chào mừng bạn đã đến với <strong>DAKAFOODMAP</strong> </h4>
+                            <p>Mời Bạn Đăng Ký</p>
+                            <div>
+                                <span>Tên Đăng Nhập</span>
+                                <br>
+                                <input id="name1" class="name" type="text" id="dangnhap2" placeholder="Nguyễn Văn A"
+                                    required>
+                                <br>
+                                <span>Mật Khẩu</span>
+                                <br>
+                                <input id="matkhaudk1" class="pass" type="password" placeholder="*********" required>
+                                <br>
+                                <span>Nhập Lại Mật Khẩu</span>
+                                <br>
+                                <input id="matkhaudk2" class="pass" type="password" placeholder="*********" required>
+                                <br>
+                                <span>Nhập khu vục bạn đang ở </span>
+                                <br>
+                                <input id="area" type="text" placeholder="VD: 1,3,5,..." required>
+
+
+                            </div>
+                            <button id="submit1" class="login">submit</button>
+                            <div>
+                                <span>đăng nhập tại đây: </span>
+                                <button id="login" class="login">log in</button>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+    </nav>
+    <br>
+
+    <button class="btn-scrolltop" onclick="scrollToTop()">
+        <img src="arrow.png" alt="Scroll to Top">
+    </button>
+    <main>
+
+
+        <div id="nearshop">
+            <h1><b>QUÁN GẦN ĐÂY</b></h1>
+            <div class="nearshop">
+
+
+                <div class="near quận 2">
+                    <div class="the">
+                        <div class="truoc">
+                            <img
+                                src="https://lh5.googleusercontent.com/p/AF1QipPtZNchvE7APkAMIylGYUgTNK2LqPfmGRCwg8IX=w426-h240-k-no" />
+                        </div>
+                        <div class="sau">
+                            <h2>Quán Gió</h2>
+                            <div>
+                                <p><a href="https://maps.app.goo.gl/P9XguaRyPwRWa5Qh7">Địa chỉ: 1 Đường số 22, khu phố
+                                        4, Quận 2</a></p>
+                                <p>Giờ mở cửa: 10:00–21:01</p>
+                                <p>SĐT: 02837438396</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="near quận 1">
+                    <div class="the">
+                        <div class="truoc">
+                            <img
+                                src="https://lh5.googleusercontent.com/p/AF1QipNk_pX0znPRwnMLrwQGiwjMgfbGePzBEx7RUUXZ=w426-h240-k-no" />
+                        </div>
+                        <div class="sau">
+                            <h2>NHÀ HÀNG NGON</h2>
+                            <div>
+                                <p><a href="https://maps.app.goo.gl/MzBi4pwz3XzsZAa3A">Địa chỉ: 160 Pasteur, Bến
+                                        Nghé,Quận 1</a></p>
+                                <p>Giờ mở cửa: 07:00–22:30</p>
+                                <p>SĐT: 02838277131</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="near quận 5">
+                    <div class="the">
+                        <div class="truoc">
+                            <img
+                                src="https://lh3.googleusercontent.com/p/AF1QipPEu5lpCgooNwaEpq2A8iXvvcwOIrPHzFcPYP5I=s1360-w1360-h1020" />
+                        </div>
+                        <div class="sau">
+                            <h2>Quán Mì Ý 29K TAISOT</h2>
+                            <div>
+                                <p><a href="https://maps.app.goo.gl/qzhKcmMNiMaosetE8">Địa chỉ: 840 Đ. Võ Văn Kiệt, P.5,
+                                        Quận 5</a></p>
+                                <p>Giờ mở cửa: 10:00–22:00</p>
+                                <p>SĐT: 0909397018</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="near quận 10">
+                    <div class="the">
+                        <div class="truoc">
+                            <img
+                                src="https://lh5.googleusercontent.com/p/AF1QipNKgKAScrUgm2IhJ2MM26e5dND-pUyFjPZ128hf=w203-h114-k-no" />
+                        </div>
+                        <div class="sau">
+                            <h2>Tiến Hải Quán</h2>
+                            <div>
+                                <p><a href="https://maps.app.goo.gl/XUT7mdw2tpAW7dA68">Địa chỉ: 804 Đ. Sư Vạn Hạnh,
+                                        Phường 12, Quận 10</a></p>
+                                <p>Giờ mở cửa: 09:15–22:15</p>
+                                <p>SĐT: 0963853858</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="near quận 3">
+                    <div class="the">
+                        <div class="truoc">
+                            <img
+                                src="https://lh5.googleusercontent.com/p/AF1QipOvav8RYqWghjIdIrvFTKxYMlzTpAfn19pgRy_h=w203-h270-k-no" />
+                        </div>
+                        <div class="sau">
+                            <h2>The Lô-Cồ Coffee
+                            </h2>
+                            <div>
+                                <p><a href="https://maps.app.goo.gl/paxmyR2ndLZaX67a9">Địa chỉ: 278A Đ. Võ Thị Sáu,
+                                        Phường Võ Thị Sáu, Quận 3</a></p>
+                                <p>Giờ mở cửa: 07:00–22:00</p>
+                                <p>SĐT: 02837438396</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="near quận 3">
+                    <div class="the">
+                        <div class="truoc">
+                            <img
+                                src="https://lh5.googleusercontent.com/p/AF1QipOCHhM3SgUUy_Dkv7H0F3wb889MDIkMoQjy9Jxe=w533-h240-k-no" />
+                        </div>
+                        <div class="sau">
+                            <h2>Quán Nước Len Keng
+                            </h2>
+                            <div>
+                                <p><a
+                                        href="Địa chỉ: 233/5B Đ. Võ Thị Sáu, Phường Võ Thị Sáu, Quận 3, Hồ Chí Minh, Việt Nam"></a>Địa
+                                    chỉ: 233/5B Đ. Võ Thị Sáu, Phường Võ Thị Sáu, Quận 3</p>
+                                <p>Giờ mở cửa: 07:30–21:30</p>
+                                <p>SĐT: 0977416464</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="near quận 10">
+                    <div class="the">
+                        <div class="truoc">
+                            <img
+                                src="https://lh5.googleusercontent.com/p/AF1QipMCd5tzJ_6OG-hE8foNcCW5WjwTg71hbJ-vm_Vw=w203-h152-k-no" />
+                        </div>
+                        <div class="sau">
+                            <h2>Quán Ốc Như
+                            </h2>
+                            <div>
+                                <p><a href="https://maps.app.goo.gl/Dpha5sJJj5SbZd457">Địa chỉ: 650/4/29D Đ. Điện Biên
+                                        Phủ, Phường 11, Quận 10</a></p>
+                                <p>Giờ mở cửa: 11:00–21:30</p>
+                                <p>SĐT: 0908337360</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="near quận 11">
+                    <div class="the">
+                        <div class="truoc">
+                            <img
+                                src="https://lh5.googleusercontent.com/p/AF1QipNX80soNuzrGWTUjHL3iKuYFNsyo5DwVbe4e7cc=w203-h251-k-no" />
+                        </div>
+                        <div class="sau">
+                            <h2>Quán sủi cảo Thiên Thiên
+                            </h2>
+                            <div>
+                                <p><a href="https://maps.app.goo.gl/L7Z4hNVkKH3yYdtN7">Địa chỉ: 195 Đ. Hà Tôn Quyền,
+                                        Phường 4, Quận 11</a></p>
+                                <p>Giờ mở cửa: 14:00–01:30</p>
+                                <p>SĐT: 02839557613</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="near quận phú nhuận">
+                    <div class="the">
+                        <div class="truoc">
+                            <img
+                                src="https://lh5.googleusercontent.com/p/AF1QipNesm9ok54ZSbbEJonZoN5fav0ulxfbJO9YxY0B=w408-h271-k-no" />
+                        </div>
+                        <div class="sau">
+                            <h2>Chasu Tea&Coffee</h2>
+                            <div>
+                                <p><a href="Địa chỉ: 95 Hồ Văn Huê, Phường 9, Phú Nhuận, Hồ Chí Minh, Việt Nam">Địa chỉ:
+                                        95 Hồ Văn Huê, Phường 9, Phú Nhuận</a></p>
+                                <p>Giờ mở cửa: 09:00–21:00
+
+                                </p>
+                                <p>SĐT: 0909907856
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="near quận bình thạnh">
+                    <div class="the">
+                        <div class="truoc">
+                            <img
+                                src="https://lh5.googleusercontent.com/p/AF1QipMsmytGQ6Uz9yv05FfS0PviS2PQ4PsxaF-N7wRq=w426-h240-k-no" />
+                        </div>
+                        <div class="sau">
+                            <h2>Fika Cafe
+                            </h2>
+                            <div>
+                                <p><a href="https://maps.app.goo.gl/52j73Zajbx73TYix6">Địa chỉ: 602/32 Đ. Điện Biên Phủ,
+                                        Phường 22, Bình Thạnh</a></p>
+                                <p>Giờ mở cửa: 07:00–23:00
+
+                                </p>
+                                <p>SĐT: 0707882424
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="near quận gò vấp">
+                    <div class="the">
+                        <div class="truoc">
+                            <img
+                                src="https://lh5.googleusercontent.com/p/AF1QipOrfQwaj2vXVVOiNZ7nOWFrNmSdjArF3EAO8EgK=w426-h240-k-no" />
+                        </div>
+                        <div class="sau">
+                            <h2>COFFEE 24/24</h2>
+                            <div>
+                                <p><a href="https://maps.app.goo.gl/YE5hawzQCNB5JEAj7">Địa chỉ: 109 Lê Lợi, Phường 4, Gò
+                                        Vấp</a></p>
+                                <p>Giờ mở cửa: Mở cửa cả ngày
+
+                                </p>
+                                <p>SĐT: 0962572701
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="near quận tân bình">
+                    <div class="the">
+                        <div class="truoc">
+                            <img
+                                src="https://lh5.googleusercontent.com/p/AF1QipPxuKOr0zns_IKopxiQx55_hgMc0yUol-xS-9Qr=w442-h240-k-no" />
+                        </div>
+                        <div class="sau">
+                            <h2>Tiệm Trà Tháng Năm</h2>
+                            <div>
+                                <p><a href="Địa chỉ: 3 Nhất Chi Mai, Phường 13, Tân Bình, Hồ Chí Minh, Việt Nam">Địa
+                                        chỉ: 3 Nhất Chi Mai, Phường 13, Tân Bình</a></p>
+                                <p>Giờ mở cửa: 08:00–23:00
+
+                                </p>
+                                <p>SĐT: 0768170460
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="near quận 2">
+                    <div class="the">
+                        <div class="truoc">
+                            <img
+                                src="https://lh5.googleusercontent.com/p/AF1QipPodkTRZsi47TCJnW8-Ggx8RFIAKD8kTnYnzBQT=w408-h306-k-no" />
+                        </div>
+                        <div class="sau">
+                            <h2>LOGAN STATION Café
+                            </h2>
+                            <div>
+                                <p><a href="https://maps.app.goo.gl/KFyA3ZS6gUeFw6EP8">Địa chỉ: 2 19A, An Phú, Quận
+                                        2</a></p>
+                                <p>Giờ mở cửa: 06:00–22:00
+
+                                </p>
+                                <p>SĐT: 0936798879
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="near quận bình tân">
+                    <div class="the">
+                        <div class="truoc">
+                            <img
+                                src="https://lh5.googleusercontent.com/p/AF1QipPRlY2W6CC8YgMhWzrvk71Sa-CXN4XRUtGporEG=w408-h306-k-no" />
+                        </div>
+                        <div class="sau">
+                            <h2>Valleys Coffee Cafe
+                            </h2>
+                            <div>
+                                <p><a href="https://maps.app.goo.gl/tf8dGCYzemexh2hF8">Địa chỉ: 325 Đ. Vành Đai Trong,
+                                        Bình Trị Đông B, Bình Tân</a></p>
+                                <p>Giờ mở cửa: 07:00–22:00</p>
+                                <p>SĐT: 0901307909</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="near quận 8">
+                    <div class="the">
+                        <div class="truoc">
+                            <img
+                                src="https://lh5.googleusercontent.com/p/AF1QipN6_Q3Of_-hhyStkghsMRaL2bUdhUdyF-3Tkavm=w408-h306-k-no" />
+                        </div>
+                        <div class="sau">
+                            <h2>1986 Tea | Coffee
+                            </h2>
+                            <div>
+                                <p><a href="https://maps.app.goo.gl/ErVo8y5k94jWLvC66">Địa chỉ: 108 A Đ. Bùi Minh Trực,
+                                        Phường 5, Quận 8</a></p>
+                                <p>Giờ mở cửa: 09:00–22:00</p>
+                                <p>SĐT: 0904549692</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="near quận tân bình">
+                    <div class="the">
+                        <div class="truoc">
+                            <img
+                                src="https://lh5.googleusercontent.com/p/AF1QipMDktIP6G788P3pEAyjWj1pWdQbzaqvOtraCSco=w408-h272-k-no" />
+                        </div>
+                        <div class="sau">
+                            <h2>Nhà hàng Quá Ngon
+                            </h2>
+                            <div>
+                                <p><a href="https://maps.app.goo.gl/t5cTr2t3HJ64u6hNA">Địa chỉ: 308 Đ. Lê Văn Sỹ, Phường
+                                        1, Tân Bình</a></p>
+                                <p>Giờ mở cửa: 09:00–22:30</p>
+                                <p>SĐT: 0906797932</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="near quận 10">
+                    <div class="the">
+                        <div class="truoc">
+                            <img
+                                src="https://lh5.googleusercontent.com/p/AF1QipPXwTnk53_ounER8z8psKK7i1juTE51KC8bAy2g=w426-h240-k-no" />
+                        </div>
+                        <div class="sau">
+                            <h2>Hanuri</h2>
+                            <div>
+                                <p><a href="https://maps.app.goo.gl/se5kwwegUa9cH42J6">Địa chỉ: 736 Đ. Sư Vạn Hạnh,
+                                        Phường 12, Quận 10</a></p>
+                                <p>Giờ mở cửa: 09:00–21:30</p>
+                                <p>SĐT: 02838800060</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="near quận tân bình">
+                    <div class="the">
+                        <div class="truoc">
+                            <img src="https://lh5.googleusercontent.com/p/AF1QipNdM65Hc3bO6mMFE874aXapwER5ZBb-t0Qg97F0=w426-h240-k-no
+" />
+                        </div>
+                        <div class="sau">
+                            <h2>MỘC Riêu & Nướng
+                            </h2>
+                            <div>
+                                <p><a href="9A Đ. Lam Sơn, Phường 2, Tân Bình, Hồ Chí Minh, Việt Nam">Địa chỉ: 9A Đ. Lam
+                                        Sơn, Phường 2, Tân Bình</a></p>
+                                <p>Giờ mở cửa: 10:00–23:00</p>
+                                <p>SĐT: 02866813934</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="near quận 10">
+                    <div class="the">
+                        <div class="truoc">
+                            <img src="https://lh5.googleusercontent.com/p/AF1QipOOEwxCkiyhjdnkvWuuTr5cQwYRSqSjfubLzp2_=w408-h272-k-no
+" />
+                        </div>
+                        <div class="sau">
+                            <h2>Nhà Hàng Đất Sét
+                            </h2>
+                            <div>
+                                <p><a href="https://maps.app.goo.gl/RJuhafrwCTAPwDsQ7">Địa chỉ: 16AB Hoàng Dư Khương,
+                                        Phường 12, Quận 10</a></p>
+                                <p>Giờ mở cửa: 10:00–22:00</p>
+                                <p>SĐT: 02838632728</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="near quận tân bình">
+                    <div class="the">
+                        <div class="truoc">
+                            <img
+                                src="https://lh5.googleusercontent.com/p/AF1QipNj59Ljvy3e2-55Fed_-qyXBGwz3JC31-2AyXdm=w203-h114-k-no" />
+                        </div>
+                        <div class="sau">
+                            <h2>Quán ăn Thiên Ân</h2>
+                            <div>
+                                <p><a href="https://maps.app.goo.gl/zZnK8fhq5dyUu98E9">Địa chỉ: 144 Bành Văn Trân,
+                                        Phường 7, Tân Bình</a></p>
+                                <p>Giờ mở cửa: 09:00–21:00</p>
+                                <p>SĐT: 0706598530</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+        <div id="newshop">
+            <h1><b>QUÁN MỚI</b></h1>
+            <div class="newshop">
+
+                <div class="new">
+                    <img
+                        src="https://lh5.googleusercontent.com/p/AF1QipPtZNchvE7APkAMIylGYUgTNK2LqPfmGRCwg8IX=w426-h240-k-no" />
+                    <h3>Quán Gió</h3>
+                </div>
+                <div class="ttnc">
+                    <h1>Quán Gió</h1>
+                    <button class="close"><img src="exiticon.png" alt="thoat"></button>
+
+                    <div>
+                        <div class="flex1">
+                            <img
+                                src="https://lh5.googleusercontent.com/p/AF1QipPtZNchvE7APkAMIylGYUgTNK2LqPfmGRCwg8IX=w426-h240-k-no" />
+                            <div>
+                                <p><a href="https://maps.app.goo.gl/P9XguaRyPwRWa5Qh7">Địa chỉ: 1 Đường số 22, khu phố
+                                        4, Quận 2, Hồ Chí Minh, Việt Nam</a></p>
+                                <p>Giờ mở cửa: 10:00–21:01</p>
+                                <p>SĐT: 02837438396</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="new">
+                    <img
+                        src="https://lh5.googleusercontent.com/p/AF1QipNk_pX0znPRwnMLrwQGiwjMgfbGePzBEx7RUUXZ=w426-h240-k-no" />
+                    <h3>NHÀ HÀNG NGON</h3>
+                </div>
+                <div class="ttnc">
+                    <h1>NHÀ HÀNG NGON</h1>
+                    <button class="close"><img src="exiticon.png" alt="thoat"></button>
+
+                    <div>
+                        <div class="flex1">
+                            <img
+                                src="https://lh5.googleusercontent.com/p/AF1QipNk_pX0znPRwnMLrwQGiwjMgfbGePzBEx7RUUXZ=w426-h240-k-no" />
+                            <div>
+                                <p><a href="https://maps.app.goo.gl/MzBi4pwz3XzsZAa3A">Địa chỉ: 160 Pasteur, Bến Nghé,
+                                        Quận 1, Hồ Chí Minh, Việt Nam</a></p>
+                                <p>Giờ mở cửa: 07:00–22:30</p>
+                                <p>SĐT: 02838277131</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="new">
+                    <img
+                        src="https://lh5.googleusercontent.com/p/AF1QipPEu5lpCgooNwaEpq2A8iXvvcwOIrPHzFcPYP5I=w80-h80-p-k-no" />
+                    <h3>Quán Mì Ý 29K TAISOT</h3>
+                </div>
+                <div class="ttnc">
+                    <h1>Quán Mì Ý 29K TAISOT</h1>
+                    <button class="close"><img src="exiticon.png" alt="thoat"></button>
+
+                    <div>
+                        <div class="flex1">
+                            <img
+                                src="https://lh5.googleusercontent.com/p/AF1QipPEu5lpCgooNwaEpq2A8iXvvcwOIrPHzFcPYP5I=w80-h80-p-k-no" />
+                            <div>
+                                <p><a href="https://maps.app.goo.gl/5LX9xE8sLmNp6fX49">Địa chỉ: 840 Đ. Võ Văn Kiệt, P.5,
+                                        Quận 5, Hồ Chí Minh 700000, Việt Nam</a></p>
+                                <p>Giờ mở cửa: 10:00–22:00</p>
+                                <p>SĐT: 0909397018</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="new">
+                    <img
+                        src="https://lh5.googleusercontent.com/p/AF1QipNKgKAScrUgm2IhJ2MM26e5dND-pUyFjPZ128hf=w80-h80-p-k-no" />
+                    <h3>Tiến Hải Quán</h3>
+                </div>
+                <div class="ttnc">
+                    <h1>Tiến Hải Quán</h1>
+                    <button class="close"><img src="exiticon.png" alt="thoat"></button>
+
+                    <div>
+                        <div class="flex1">
+                            <img
+                                src="https://lh5.googleusercontent.com/p/AF1QipNKgKAScrUgm2IhJ2MM26e5dND-pUyFjPZ128hf=w80-h80-p-k-no" />
+                            <div>
+                                <p><a href="https://maps.app.goo.gl/XUT7mdw2tpAW7dA68">Địa chỉ: 804 Đ. Sư Vạn Hạnh,
+                                        Phường 12, Quận 10, Hồ Chí Minh, Việt Nam</a></p>
+                                <p>Giờ mở cửa: 09:15–22:15</p>
+                                <p>SĐT: 0963853858</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="new">
+                    <img
+                        src="https://lh5.googleusercontent.com/p/AF1QipOPc0neM9UoQQUoJiDWmRY0-ybGBb4RrnwoHttS=w80-h80-p-k-no" />
+                    <h3>Quán Ốc Như</h3>
+                </div>
+                <div class="ttnc">
+                    <h1>Quán Ốc Như</h1>
+                    <button class="close"><img src="exiticon.png" alt="thoat"></button>
+
+                    <div>
+                        <div class="flex1">
+                            <img
+                                src="https://lh5.googleusercontent.com/p/AF1QipOPc0neM9UoQQUoJiDWmRY0-ybGBb4RrnwoHttS=w80-h80-p-k-no" />
+                            <div>
+                                <p><a href="https://maps.app.goo.gl/Dpha5sJJj5SbZd457">Địa chỉ: 650/4/29D Đ. Điện Biên
+                                        Phủ, Phường 11, Quận 10, Hồ Chí Minh, Việt Nam</a></p>
+                                <p>Giờ mở cửa: 11:00–21:30</p>
+                                <p>SĐT: 0908337360</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="new">
+                    <img
+                        src="https://lh5.googleusercontent.com/p/AF1QipO8zO4aOUq-x5ou3dACUj0DYv_88nwSVftqcKOY=w80-h80-p-k-no" />
+                    <h3>Quán sủi cảo Thiên Thiên</h3>
+                </div>
+                <div class="ttnc">
+                    <h1>Quán sủi cảo Thiên Thiên</h1>
+                    <button class="close"><img src="exiticon.png" alt="thoat"></button>
+
+                    <div>
+                        <div class="flex1">
+                            <img
+                                src="https://lh5.googleusercontent.com/p/AF1QipO8zO4aOUq-x5ou3dACUj0DYv_88nwSVftqcKOY=w80-h80-p-k-no" />
+                            <div>
+                                <p><a href="https://maps.app.goo.gl/L7Z4hNVkKH3yYdtN7">Địa chỉ: 195 Đ. Hà Tôn Quyền,
+                                        Phường 4, Quận 11, Hồ Chí Minh, Việt Nam</a></p>
+                                <p>Giờ mở cửa: 14:00–01:30</p>
+                                <p>SĐT: 02839557613</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="new">
+                    <img
+                        src="https://lh5.googleusercontent.com/p/AF1QipOvav8RYqWghjIdIrvFTKxYMlzTpAfn19pgRy_h=w80-h80-p-k-no" />
+                    <h3>The Lô-Cồ Coffee</h3>
+                </div>
+                <div class="ttnc">
+                    <h1>The Lô-Cồ Coffee</h1>
+                    <button class="close"><img src="exiticon.png" alt="thoat"></button>
+
+                    <div>
+                        <div class="flex1">
+                            <img
+                                src="https://lh5.googleusercontent.com/p/AF1QipOvav8RYqWghjIdIrvFTKxYMlzTpAfn19pgRy_h=w80-h80-p-k-no" />
+                            <div>
+                                <p><a href="https://maps.app.goo.gl/paxmyR2ndLZaX67a9">Địa chỉ: 278A Đ. Võ Thị Sáu,
+                                        Phường Võ Thị Sáu, Quận 3, Hồ Chí Minh, Việt Nam</a></p>
+                                <p>Giờ mở cửa: 07:00–22:00</p>
+                                <p>SĐT: 02837438396</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="new">
+                    <img
+                        src="https://lh5.googleusercontent.com/p/AF1QipOCHhM3SgUUy_Dkv7H0F3wb889MDIkMoQjy9Jxe=w533-h240-k-no" />
+                    <h3>Quán Nước Len Keng</h3>
+                </div>
+                <div class="ttnc">
+                    <h1>Quán Nước Len Keng</h1>
+                    <button class="close"><img src="exiticon.png" alt="thoat"></button>
+
+                    <div>
+                        <div class="flex1">
+                            <img
+                                src="https://lh5.googleusercontent.com/p/AF1QipOCHhM3SgUUy_Dkv7H0F3wb889MDIkMoQjy9Jxe=w533-h240-k-no" />
+                            <div>
+                                <p><a href="https://maps.app.goo.gl/t9AvFRyUU5FUG7Tr7">Địa chỉ: 233/5B Đ. Võ Thị Sáu,
+                                        Phường Võ Thị Sáu, Quận 3, Hồ Chí Minh, Việt Nam</a></p>
+                                <p>Giờ mở cửa: 07:30–21:30
+                                </p>
+                                <p>SĐT: 0977416464</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="new">
+                    <img
+                        src="https://lh5.googleusercontent.com/p/AF1QipNesm9ok54ZSbbEJonZoN5fav0ulxfbJO9YxY0B=w408-h271-k-no" />
+                    <h3>Chasu Tea&Coffee Phú Nhuận</h3>
+                </div>
+                <div class="ttnc">
+                    <h1>Chasu Tea&Coffee Phú Nhuận</h1>
+                    <button class="close"><img src="exiticon.png" alt="thoat"></button>
+
+                    <div>
+                        <div class="flex1">
+                            <img
+                                src="https://lh5.googleusercontent.com/p/AF1QipNesm9ok54ZSbbEJonZoN5fav0ulxfbJO9YxY0B=w408-h271-k-no" />
+                            <div>
+                                <p><a href="https://maps.app.goo.gl/tYAZjgfV2eAwg1jQ6">Địa chỉ: 95 Hồ Văn Huê, Phường 9,
+                                        Phú Nhuận, Hồ Chí Minh, Việt Nam</a></p>
+                                <p>Giờ mở cửa: 09:00–21:00</p>
+                                <p>SĐT: 0909907856</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="new">
+                    <img
+                        src="https://lh5.googleusercontent.com/p/AF1QipMsmytGQ6Uz9yv05FfS0PviS2PQ4PsxaF-N7wRq=w426-h240-k-no" />
+                    <h3>Fika Cafe - Fika Getogether</h3>
+                </div>
+                <div class="ttnc">
+                    <h1>Fika Cafe - Fika Getogether</h1>
+                    <button class="close"><img src="exiticon.png" alt="thoat"></button>
+
+                    <div>
+                        <div class="flex1">
+                            <img
+                                src="https://lh5.googleusercontent.com/p/AF1QipMsmytGQ6Uz9yv05FfS0PviS2PQ4PsxaF-N7wRq=w426-h240-k-no" />
+                            <div>
+                                <p><a href="https://maps.app.goo.gl/52j73Zajbx73TYix6">Địa chỉ: 602/32 Đ. Điện Biên Phủ,
+                                        Phường 22, Bình Thạnh, Hồ Chí Minh 70000, Việt Nam</a></p>
+                                <p>Giờ mở cửa: 07:00–23:00</p>
+                                <p>SĐT: 0707882424</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+        <div id="trendshop">
+            <h1><b>QUÁN ĐANG HOT</b></h1>
+            <div class="hotshop">
+
+                <div class="hot">
+                    <img
+                        src="https://lh5.googleusercontent.com/p/AF1QipOrfQwaj2vXVVOiNZ7nOWFrNmSdjArF3EAO8EgK=w426-h240-k-no" />
+                    <h3>COFFEE 24/24</h3>
+                </div>
+                <div class="ttnc">
+                    <h1>COFFEE 24/24</h1>
+                    <button class="close"><img src="exiticon.png" alt="thoat"></button>
+
+                    <div>
+                        <div class="flex1">
+                            <img
+                                src="https://lh5.googleusercontent.com/p/AF1QipOrfQwaj2vXVVOiNZ7nOWFrNmSdjArF3EAO8EgK=w426-h240-k-no" />
+                            <div>
+                                <p><a href="https://maps.app.goo.gl/YE5hawzQCNB5JEAj7">Địa chỉ: 109 Lê Lợi, Phường 4, Gò
+                                        Vấp, Hồ Chí Minh, Việt Nam</a></p>
+                                <p>Giờ mở cửa: Mở cửa cả ngày</p>
+                                <p>SĐT: 0962572701</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hot">
+                    <img
+                        src="https://lh5.googleusercontent.com/p/AF1QipPxuKOr0zns_IKopxiQx55_hgMc0yUol-xS-9Qr=w442-h240-k-no" />
+                    <h3>Tiệm Trà Tháng Năm (Tea & Coffee)</h3>
+                </div>
+                <div class="ttnc">
+                    <h1>Tiệm Trà Tháng Năm (Tea & Coffee)</h1>
+                    <button class="close"><img src="exiticon.png" alt="thoat"></button>
+
+                    <div>
+                        <div class="flex1">
+                            <img
+                                src="https://lh5.googleusercontent.com/p/AF1QipPxuKOr0zns_IKopxiQx55_hgMc0yUol-xS-9Qr=w442-h240-k-no" />
+                            <div>
+                                <p><a href="https://maps.app.goo.gl/3gBF8T1vKoQX46gF9">Địa chỉ: 3 Nhất Chi Mai, Phường
+                                        13, Tân Bình, Hồ Chí Minh, Việt Nam</a></p>
+                                <p>Giờ mở cửa: 08:00–23:00
+                                </p>
+                                <p>SĐT: 0768170460</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hot">
+                    <img
+                        src="https://lh5.googleusercontent.com/p/AF1QipPodkTRZsi47TCJnW8-Ggx8RFIAKD8kTnYnzBQT=w408-h306-k-no" />
+                    <h3>LOGAN STATION Café</h3>
+                </div>
+                <div class="ttnc">
+                    <h1>LOGAN STATION Café</h1>
+                    <button class="close"><img src="exiticon.png" alt="thoat"></button>
+
+                    <div>
+                        <div class="flex1">
+                            <img
+                                src="https://lh5.googleusercontent.com/p/AF1QipPodkTRZsi47TCJnW8-Ggx8RFIAKD8kTnYnzBQT=w408-h306-k-no" />
+                            <div>
+                                <p><a href="https://maps.app.goo.gl/KFyA3ZS6gUeFw6EP8">Địa chỉ: 2 19A, An Phú, Quận 2,
+                                        Hồ Chí Minh, Việt Nam</a></p>
+                                <p>Giờ mở cửa: 06:00–22:00
+                                </p>
+                                <p>SĐT: 0936798879</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hot">
+                    <img
+                        src="https://lh5.googleusercontent.com/p/AF1QipPRlY2W6CC8YgMhWzrvk71Sa-CXN4XRUtGporEG=w408-h306-k-no" />
+                    <h3>Valleys Coffee Cafe</h3>
+                </div>
+                <div class="ttnc">
+                    <h1>Valleys Coffee Cafe</h1>
+                    <button class="close"><img src="exiticon.png" alt="thoat"></button>
+
+                    <div>
+                        <div class="flex1">
+                            <img
+                                src="https://lh5.googleusercontent.com/p/AF1QipPRlY2W6CC8YgMhWzrvk71Sa-CXN4XRUtGporEG=w408-h306-k-no" />
+                            <div>
+                                <p><a href="https://maps.app.goo.gl/tf8dGCYzemexh2hF8">Địa chỉ: 325 Đ. Vành Đai Trong,
+                                        Bình Trị Đông B, Bình Tân, Hồ Chí Minh 700000, Việt Nam</a></p>
+                                <p>Giờ mở cửa: 07:00–22:00
+                                </p>
+                                <p>SĐT: 0901307909</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hot">
+                    <img
+                        src="https://lh5.googleusercontent.com/p/AF1QipN6_Q3Of_-hhyStkghsMRaL2bUdhUdyF-3Tkavm=w408-h306-k-no" />
+                    <h3>1986 Tea | Coffee
+                    </h3>
+                </div>
+                <div class="ttnc">
+                    <h1>1986 Tea | Coffee
+                    </h1>
+                    <button class="close"><img src="exiticon.png" alt="thoat"></button>
+
+                    <div>
+                        <div class="flex1">
+                            <img
+                                src="https://lh5.googleusercontent.com/p/AF1QipN6_Q3Of_-hhyStkghsMRaL2bUdhUdyF-3Tkavm=w408-h306-k-no" />
+                            <div>
+                                <p><a href="https://maps.app.goo.gl/ErVo8y5k94jWLvC66">Địa chỉ: 108 A Đ. Bùi Minh Trực,
+                                        Phường 5, Quận 8, Hồ Chí Minh, Việt Nam</a></p>
+                                <p>Giờ mở cửa: 09:00–22:00
+                                </p>
+                                <p>SĐT: 0904549692</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hot">
+                    <img
+                        src="https://lh5.googleusercontent.com/p/AF1QipMDktIP6G788P3pEAyjWj1pWdQbzaqvOtraCSco=w408-h272-k-no" />
+                    <h3>Nhà hàng Quá Ngon</h3>
+                </div>
+                <div class="ttnc">
+                    <h1>Nhà hàng Quá Ngon</h1>
+                    <button class="close"><img src="exiticon.png" alt="thoat"></button>
+
+                    <div>
+                        <div class="flex1">
+                            <img
+                                src="https://lh5.googleusercontent.com/p/AF1QipMDktIP6G788P3pEAyjWj1pWdQbzaqvOtraCSco=w408-h272-k-no" />
+                            <div>
+                                <p><a href="https://maps.app.goo.gl/t5cTr2t3HJ64u6hNA">Địa chỉ: 308 Đ. Lê Văn Sỹ, Phường
+                                        1, Tân Bình, Hồ Chí Minh 700000, Việt Nam</a></p>
+                                <p>Giờ mở cửa: 09:00–22:30
+                                </p>
+                                <p>SĐT: 0906797932</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hot">
+                    <img
+                        src="https://lh5.googleusercontent.com/p/AF1QipPXwTnk53_ounER8z8psKK7i1juTE51KC8bAy2g=w426-h240-k-no" />
+                    <h3>Hanuri</h3>
+                </div>
+                <div class="ttnc">
+                    <h1>Hanuri</h1>
+                    <button class="close"><img src="exiticon.png" alt="thoat"></button>
+
+                    <div>
+                        <div class="flex1">
+                            <img
+                                src="https://lh5.googleusercontent.com/p/AF1QipPXwTnk53_ounER8z8psKK7i1juTE51KC8bAy2g=w426-h240-k-no" />
+                            <div>
+                                <p><a href="https://maps.app.goo.gl/se5kwwegUa9cH42J6">Địa chỉ: 736 Đ. Sư Vạn Hạnh,
+                                        Phường 12, Quận 10, Hồ Chí Minh, Việt Nam</a></p>
+                                <p>Giờ mở cửa: 09:00–21:30
+                                </p>
+                                <p>SĐT: 02838800060</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hot">
+                    <img
+                        src="https://lh5.googleusercontent.com/p/AF1QipNdM65Hc3bO6mMFE874aXapwER5ZBb-t0Qg97F0=w426-h240-k-no" />
+                    <h3>MỘC Riêu & Nướng</h3>
+                </div>
+                <div class="ttnc">
+                    <h1>MỘC Riêu & Nướng</h1>
+                    <button class="close"><img src="exiticon.png" alt="thoat"></button>
+
+                    <div>
+                        <div class="flex1">
+                            <img
+                                src="https://lh5.googleusercontent.com/p/AF1QipNdM65Hc3bO6mMFE874aXapwER5ZBb-t0Qg97F0=w426-h240-k-no" />
+                            <div>
+                                <p><a href="https://maps.app.goo.gl/rcB94Enukc6FdPTMA">Địa chỉ: 9A Đ. Lam Sơn, Phường 2,
+                                        Tân Bình, Hồ Chí Minh, Việt Nam</a></p>
+                                <p>Giờ mở cửa: 10:00–23:00
+                                </p>
+                                <p>SĐT: 02866813934</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hot">
+                    <img
+                        src="https://lh5.googleusercontent.com/p/AF1QipOOEwxCkiyhjdnkvWuuTr5cQwYRSqSjfubLzp2_=w408-h272-k-no" />
+                    <h3>Nhà Hàng Đất Sét</h3>
+                </div>
+                <div class="ttnc">
+                    <h1>Nhà Hàng Đất Sét</h1>
+                    <button class="close"><img src="exiticon.png" alt="thoat"></button>
+
+                    <div>
+                        <div class="flex1">
+                            <img
+                                src="https://lh5.googleusercontent.com/p/AF1QipOOEwxCkiyhjdnkvWuuTr5cQwYRSqSjfubLzp2_=w408-h272-k-no" />
+                            <div>
+                                <p><a href="https://maps.app.goo.gl/RJuhafrwCTAPwDsQ7">Địa chỉ: 16AB Hoàng Dư Khương,
+                                        Phường 12, Quận 10, Hồ Chí Minh, Việt Nam</a></p>
+                                <p>Giờ mở cửa: 10:00–22:00
+                                </p>
+                                <p>SĐT: 02838632728</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hot">
+                    <img
+                        src="https://lh5.googleusercontent.com/p/AF1QipNj59Ljvy3e2-55Fed_-qyXBGwz3JC31-2AyXdm=w203-h114-k-no" />
+                    <h3>Quán ăn Thiên Ân</h3>
+                </div>
+                <div class="ttnc">
+                    <h1>Quán ăn Thiên Ân</h1>
+                    <button class="close"><img src="exiticon.png" alt="thoat"></button>
+
+                    <div>
+                        <div class="flex1">
+                            <img
+                                src="https://lh5.googleusercontent.com/p/AF1QipNj59Ljvy3e2-55Fed_-qyXBGwz3JC31-2AyXdm=w203-h114-k-no" />
+                            <div>
+                                <p><a href="https://maps.app.goo.gl/zZnK8fhq5dyUu98E9">Địa chỉ: 144 Bành Văn Trân,
+                                        Phường 7, Tân Bình, Hồ Chí Minh, Việt Nam</a></p>
+                                <p>Giờ mở cửa: 09:00–21:00
+                                </p>
+                                <p>SĐT: 0706598530</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </main>
+
+
+
+</body>
+<br>
+<br>
+<footer>
+    <div class="flex1 footer_subject">
+        <div class="subject">
+            <div>
+                <a class="logo1" href="/?initialPath=%2F&id=%3Ar1o%3A">
+                    <div><img src="logo.png" alt="logo"></div>
+                    <h2>DAKAFOODMAP</h2>
+                </a>
+            </div>
+        </div>
+        <div class="subject">
+            <div>
+                <ul>
+                    <li>
+                        <h4>THÔNG TIN LIÊN HỆ:</h4>
+                    </li>
+                    <li>SĐT:</li>
+                    <li>0987654321 (Đăng)</li>
+                    <li>0335415448 (Khánh)</li>
+                </ul>
+                <p>Địa chỉ: Lê Văn Lương, Phước Kiển, Nhà Bè, Tp. Hồ Chí Minh</p>
+                <p>Email: dakafoodmap@gmail.com</p>
+            </div>
+        </div>
+        <div class="subject">
+            <div>
+                <ul>
+                    <li>
+                        <h4>TÌM KIẾM:</h4>
+                    </li>
+                    <li><a href="timkiem.html#newshop">Quán mới</a></li>
+                    <li><a href="timkiem.html#trendshop">Quán đang hot</a></li>
+                    <li><a href="timkiem.html#nearshop">Quán gần đây</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="subject">
+            <div>
+                <ul>
+                    <li>
+                        <h4>Nổi bật:</h4>
+                    </li>
+                    <li><a href="monanno.html">Món ăn no</a></li>
+                    <li><a href="nuocuong.html">Nước uống</a></li>
+                    <li><a href="anvat.html">Ăn vặt</a></li>
+                    <li><a href="trangmieng.html">Tráng miệng</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+</html>

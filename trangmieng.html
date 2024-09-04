@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DaKaFoodMap</title>
+    <link rel="stylesheet" href="trangmieng.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="trangmieng.js"></script>
+
+</head>
+
+<body>
+    <nav>
+        <div class="headpage">
+            <div class="toolbar">
+                <img src="menu.png" alt="icon" class="tool" id="openSlide">
+            </div>
+            <div class="congcu">
+              <ul>
+                  <li>
+                        <a href="#">
+                            <img src="menu.png" alt="icon" class="tool1" id="closeSlide">
+                        </a>
+                    </li>
+                  <br>
+                  <li>
+                      <a href="index.html">
+                          <img src="home.png" alt="icon" class="icon">
+                          <span class="smallitem">Trang Chủ</span>
+                      </a>
+                  </li>
+                  <br>
+                  <li>
+                        <a href="monanno.html"">
+                            <img src="no.png" alt="icon" class="icon">
+                            <span class="smallitem">Món Ăn No</span>
+                        </a>
+                  </li>
+                  <br>
+                  <li>
+                        <a href="nuocuong.html">
+                            <img src="drink.png" alt="icon" class="icon">
+                            <span class="smallitem">Nước</span>
+                        </a>
+                   </li>
+                  <br>
+                  <li>
+                        <a href="anvat.html">
+                            <img src="cookies.png" alt="icon" class="icon">
+                            <span class="smallitem">Ăn Vặt</span>
+                        </a>
+                    </li>
+                  <br>
+                  <li>
+                        <a href="trangmieng.html">
+                            <img src="dessert.png" alt="icon" class="icon">
+                            <span class="smallitem">Món Tráng Miệng</span>
+                        </a>
+                    </li>
+                  <br>
+                  <li>
+                      <a href="timkiem.html#newshop">
+                          <img src="new.png" alt="icon" class="icon">
+                          <span class="smallitem">Quán Mới</span>
+                      </a>
+                  </li>
+                  <br>
+                  <li>
+                      <a href="timkiem.html#trendshop">
+                          <img src="fire.png" alt="icon" class="icon">
+                          <span class="smallitem">Quán Đang Hot</span>
+                      </a>
+                  </li>
+              </ul>
+
+            </div>
+            <ul class="flex muc">
+                <li class="logo">
+                    <a href="index.html">
+
+                        <img src="logo.png" alt="logo">
+                    </a>
+                </li>
+
+                <li><a href="index.html">Trang chủ</a></li>
+                <li id="#menutop">
+                    <a href="#">Ăn uống</a>
+                    <div class="menuanuong">
+                        <ul>
+                            <li>
+                                <a href="monanno.html"> Món ăn no</a>
+                            </li>
+                            <li><a href="nuocuong.html">Nước uống</a></li>
+                            <li><a href="anvat.html">Ăn vặt</a></li>
+                            <li><a href="trangmieng.html">Tráng miệng</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="timkiem.html#newshop">Quán mới</a></li>
+                <li><a href="timkiem.html#trendshop">Quán đang hot</a></li>
+                <button id="dangnhap" class="login">Đăng nhập</button>
+                <div class="changeLogin hidden">
+                    <button>
+                        <img
+                            src="https://www.shutterstock.com/image-vector/default-avatar-profile-icon-social-600nw-1677509740.jpg" />
+                    </button>
+
+                    <br>
+                    <span id="username">hi ban</span>
+                    <ul class="information hidden">
+                        <li id="tenuser">Tên: abc123</li>
+                        <li id="diachiuser">Địa chỉ: abc123</li>
+                        <li><a href="?initialPath=%2F&id=%3Ar1o%3A"">Thoát</a></li>
+                  </ul>
+              </div>
+          </ul>
+      </div>
+
+      <div class=" research">
+                                <span class="text1"><strong>TÌM MÓN CÙNG</strong></span>
+                                <span class="text2"><strong>DAKAFOODMAP</strong></span>
+
+                                <img src="tráng miệng.png" alt="mô tả">
+
+                                <a href="timkiem.html"><div>
+                                    <select id="region" class="selection-box option">
+                                        <option value="Ho Chi Minh">Hồ Chí Minh</option>
+                                        <option value="Quận 1">Quận 1</option>
+                                        <option value="Quận 3">Quận 3</option>
+                                        <option value="Quận 4">Quận 4</option>
+                                        <option value="Quận 5">Quận 5</option>
+                                        <option value="Quận 6">Quận 6</option>
+                                        <option value="Quận 7">Quận 7</option>
+                                        <option value="Quận 8">Quận 8</option>
+                                        <option value="Quận 10">Quận 10</option>
+                                        <option value="Quận 11">Quận 11</option>
+                                        <option value="Quận 12">Quận 12</option>
+                                        <option value="Quận Tân Bình">Quận Tân Bình</option>
+                                        <option value="Quận Bình Tân">Quận Bình Tân</option>
+                                        <option value="Quận Bình Thạnh">Quận Bình Thạnh</option>
+                                        <option value="Quận Tân Phú">Quận Tân Phú</option>
+                                        <option value="Quận Gò Vấp">Quận Gò Vấp</option>
+                                        <option value="Quận Phú Nhuận">Quận Phú Nhuận</option>
+                                        <option value="Huyện Bình Chánh">Huyện Bình Chánh </option>
+                                        <option value="Huyện Cần Giờ">Huyện Cần Giờ</option>
+                                        <option value="Huyện Hóc Môn">Huyện Hóc Môn</option>
+                                        <option value="Huyện Củ Chi">Huyện Củ Chi</option>
+                                        <option value="Huyện Nhà Bè">Huyện Nhà Bè</option>
+
+
+                                    </select>
+                                </div>
+                                <div class="search-container">
+                                    <input class="nhapmonan" type="search" id="search"
+                                        placeholder="Bạn có thèm trà sữa, bánh tráng trộn, cơm,.. ko">
+                                    <button type="submit" class="find"><img src="lookupicon.jpg" alt="tim"></button></a>
+                                </div>
+                </div>
+
+
+
+                <div class="bangdangnhap">
+                    <div class="daubang">
+                        <h2>DAKAFOODMAP</h2>
+                        <button id="close" class="close"><img src="exiticon.png" alt="thoat"></button>
+                    </div>
+                    <div class="thanbang">
+                        <h4>Chào mừng bạn đã đến với <strong>DAKAFOODMAP</strong> </h4>
+                        <p>Đăng nhập để nhận được sự phục vụ tốt nhất</p>
+                        <div>
+                            <span>Tên Đăng Nhập</span>
+                            <input id="name" class="name" type="text" id="dangnhap1" placeholder="Nguyễn Văn A">
+                            <br>
+                            <span>Mật Khẩu</span>
+                            <input id="matkhau" class="pass" type="password" placeholder="*********">
+                        </div>
+                        <button id="submit" class="login">submit</button>
+                        <div>
+                            <div>
+                                <span>đăng ký tại đây: </span>
+                                <button id="signup" class="login">sign up</button>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="bangdangki">
+                        <div class="daubang">
+                            <h2>DAKAFOODMAP</h2>
+                            <button id="close2" class="close"><img src="exiticon.png" alt="thoat"></button>
+                        </div>
+                        <div class="thanbang">
+                            <h4>Chào mừng bạn đã đến với <strong>DAKAFOODMAP</strong> </h4>
+                            <p>Mời Bạn Đăng Ký</p>
+                            <div>
+                                <span>Tên Đăng Nhập</span>
+                                <br>
+                                <input id="name1" class="name" type="text" id="dangnhap2" placeholder="Nguyễn Văn A"
+                                    required>
+                                <br>
+                                <span>Mật Khẩu</span>
+                                <br>
+                                <input id="matkhaudk1" class="pass" type="password" placeholder="*********" required>
+                                <br>
+                                <span>Nhập Lại Mật Khẩu</span>
+                                <br>
+                                <input id="matkhaudk2" class="pass" type="password" placeholder="*********" required>
+                                <br>
+                                <span>Nhập khu vục bạn đang ở </span>
+                                <br>
+                                <input id="area" type="text" placeholder="VD: 1,3,5,..." required>
+
+
+                            </div>
+                            <button id="submit1" class="login">submit</button>
+                            <div>
+                                <span>đăng nhập tại đây: </span>
+                                <button id="login" class="login">log in</button>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+    </nav>
+    <button class="btn-scrolltop" onclick="scrollToTop()">
+        <img src="arrow.png" alt="Scroll to Top">
+    </button>
+    <main>
+        <!-- danh sách món tráng miệng -->
+        <div>
+            <select id="dsmontrangmieng" class="dsmon option">
+                <option value="All" selected>Tất cả</option>
+                <option value="che">Chè</option>
+                <option value="kem">Kem</option>
+                <option value="banh">Bánh</option>
+                <option value="mochi">Mochi</option>
+                <option value="tauhu">Tàu hủ</option>
+                <option value="traicay">Trái Cây</option>
+                <option value="panna">Panna Cotta</option>
+            </select>
+        </div>
+
+        <section>
+            <div class="trangmiengs">
+                <div class="trangmieng che">
+                    <div>
+                        <div class="che">
+                            
+                                <div class="bar top"></div>
+                                <div class="bar bottom"></div>
+                                <div class="bar left"></div>
+                                <div class="bar right"></div>
+                                <div class="text">Quán Chè Quỳnh Anh:<a href="https://maps.app.goo.gl/egTki7pRTqXA8AKw8">
+                                    2315 Huỳnh Tấn Phát, TT. Nhà Bè, Nhà Bè, Hồ Chí Minh, Việt Nam</a></div>
+                                <img src="https://lh5.googleusercontent.com/p/AF1QipObb8rsnmzsLD9nvqGEV3-q0WlKboTydyX-h0tN=w203-h270-k-no"
+                                    alt="mon trang mieng" class="anh">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="trangmieng kem">
+                    <div>
+                        <div class="kem">
+                            
+                                <div class="bar top"></div>
+                                <div class="bar bottom"></div>
+                                <div class="bar left"></div>
+                                <div class="bar right"></div>
+                                <div class="text">Kem Ký Hải Thượng Lãn Ông:<a href="https://maps.app.goo.gl/D1pQB5ARXekpkdyG9">
+                                    177 Đ. Hải Thượng Lãn Ông, Phường 13, Quận 5, Hồ Chí Minh, Việt Nam</a></div>
+                                <img src="https://lh5.googleusercontent.com/p/AF1QipMbcACl-6at2BPbhK4IhsgM0oPj4ibVfV8j-cql=w203-h270-k-no"
+                                    alt="mon trang mieng" class="anh">
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trangmieng banh">
+                    <div>
+                        <div class="banh">
+                           
+                                <div class="bar top"></div>
+                                <div class="bar bottom"></div>
+                                <div class="bar left"></div>
+                                <div class="bar right"></div>
+                                <div class="text">Bánh Kem Hoàng Phúc HappyCake: <a href="https://maps.app.goo.gl/nV6dW4315pBFhW5r6">
+                                    878 Huỳnh Tấn Phát, Tân Phú, Quận 7, Hồ Chí Minh, Việt Nam</a></div>
+                                <img src="https://lh5.googleusercontent.com/p/AF1QipNwmR2FIpdRiSgnkURgVi-5GjydhUmhCx6hXMAN=w203-h152-k-no"
+                                    alt="mon trang mieng" class="anh">
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trangmieng mochi">
+                    <div>
+                        <div class="mochi">
+                            
+                                <div class="bar top"></div>
+                                <div class="bar bottom"></div>
+                                <div class="bar left"></div>
+                                <div class="bar right"></div>
+                                <div class="text">Mochi Sweets: <a href="https://maps.app.goo.gl/FLQs2WeWyobA8NMA6">
+                                    504 Nguyễn Đình Chiểu, phường 5, Quận 3, Hồ Chí Minh 700000, Việt Nam</a></div>
+                                <img src="https://lh5.googleusercontent.com/p/AF1QipOeNR-MWh7BBgh8Mf2fdQ3iMvzHla8pRj60vUjT=w203-h152-k-no"
+                                    alt="mon trang mieng" class="anh">
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trangmieng tauhu">
+                    <div>
+                        <div class="tauhu">
+                            
+                                <div class="bar top"></div>
+                                <div class="bar bottom"></div>
+                                <div class="bar left"></div>
+                                <div class="bar right"></div>
+                                <div class="text">Tàu hủ đường mật Cô Hiệp:<a href="https://maps.app.goo.gl/NBM3sYShmJJUVYPZ9">
+                                    15 Đ. Lê Văn Sỹ, Phường 13, Quận 3, Hồ Chí Minh 700000, Việt Nam</a></div>
+                                <img src="https://lh5.googleusercontent.com/p/AF1QipO6wfNdl90xrKj6uHWcrlNOkC-Ajw-A3PEvdQmb=w203-h206-k-no"
+                                    alt="mon trang mieng" class="anh">
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trangmieng traicay">
+                    <div>
+                        <div class="traicay">
+                            
+                                <div class="bar top"></div>
+                                <div class="bar bottom"></div>
+                                <div class="bar left"></div>
+                                <div class="bar right"></div>
+                                <div class="text">Fruit Crush: Trái Cây Tươi & Ăn Vặt:<a href="https://maps.app.goo.gl/fwPWzVzQLvXPtfpTA">
+                                    25/5 Đ. Nguyễn Thị Minh Khai, Bến Nghé, Quận 1, Hồ Chí Minh, Việt Nam</a></div>
+                                <img src="https://lh5.googleusercontent.com/p/AF1QipMkROm6E0LF81EMNa4XJO1YSdH8-kUsqUVdLxKY=w203-h304-k-no"
+                                    alt="mon trang mieng" class="anh">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="trangmieng panna">
+                    <div>
+                        <div class="panna">
+                            
+                                <div class="bar top"></div>
+                                <div class="bar bottom"></div>
+                                <div class="bar left"></div>
+                                <div class="bar right"></div>
+                                <div class="text">Tiệm Trà & Bánh Sunny: <a href="https://maps.app.goo.gl/tHadLwiJ2SzXTRn98">
+                                    147 đường số 6A, Phường Phước Bình, Quận 9, Thủ Đức, Hồ Chí Minh 700000, Việt Nam</a>
+                                </div>
+                                <img src="https://lh5.googleusercontent.com/p/AF1QipOYOkUaRGUZVcWDlvz7U8cddRQaodHNXEKUUipf=w203-h203-k-no"
+                                    alt="mon trang mieng" class="anh">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="trangmieng che">
+                    <div>
+                        <div class="che">
+                            
+                                <div class="bar top"></div>
+                                <div class="bar bottom"></div>
+                                <div class="bar left"></div>
+                                <div class="bar right"></div>
+                                <div class="text">Tiệm chè bảo lâm:<a href="https://maps.app.goo.gl/4JEsSKk4Bqr1cSjt7">
+                                    380 Đ. Lý Thái Tổ, Phường 10, Quận 10, Hồ Chí Minh, Việt Nam</a></div>
+                                <img src="https://lh5.googleusercontent.com/p/AF1QipPuFgi34BIq8RMzmFTcQdm8bObn96JpcyxLyyks=w408-h544-k-no"
+                                    alt="mon trang mieng" class="anh">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="trangmieng kem">
+                    <div>
+                        <div class="kem">
+                            
+                                <div class="bar top"></div>
+                                <div class="bar bottom"></div>
+                                <div class="bar left"></div>
+                                <div class="bar right"></div>
+                                <div class="text">Kem Bơ Nàng Zoe:<a href="https://maps.app.goo.gl/42km6wfdYYdQ91NFA">
+                                    92A Đ. Trường Sa, Phường 17, Bình Thạnh, Hồ Chí Minh 700000, Việt Nam </a></div>
+                                <img src="https://lh5.googleusercontent.com/p/AF1QipOfhIAI6YojMSUOyQVgFPzZ0RVRhe_aEHPi09xM=w203-h270-k-no"
+                                    alt="mon trang mieng" class="anh">
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="trangmieng banh">
+                    <div>
+                        <div class="banh">
+                            
+                                <div class="bar top"></div>
+                                <div class="bar bottom"></div>
+                                <div class="bar left"></div>
+                                <div class="bar right"></div>
+                                <div class="text">Àlamain Bakery & Cafe:<a href="https://maps.app.goo.gl/RADcpyphQrkQKPPb7">
+                                    Đ. Nguyễn Hữu Thọ, Phước Kiển, Thành phố Hồ Chí Minh, Hồ Chí Minh 700000, Việt Nam</a>
+                                </div>
+                                <img src="https://lh5.googleusercontent.com/p/AF1QipNeO_f9PkseZxWcJ3PbiFwkN9xn21J58H8rGOi1=w203-h152-k-no"
+                                    alt="mon trang mieng" class="anh">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="trangmieng mochi">
+                    <div>
+                        <div class="mochi">
+                            
+                                <div class="bar top"></div>
+                                <div class="bar bottom"></div>
+                                <div class="bar left"></div>
+                                <div class="bar right"></div>
+                                <div class="text">Ranchu:<a href="https://maps.app.goo.gl/vogMq8qZ9bgCqdSy7">
+                                    65 Đ. Nguyễn Cư Trinh, Phường Nguyễn Cư Trinh, Quận 1, Hồ Chí Minh, Việt Nam</a></div>
+                                <img src="https://lh5.googleusercontent.com/p/AF1QipO0JhQEP4Nu1oIaSklOomzW6lhTIqb-T9wO5zBz=w203-h203-k-no"
+                                    alt="mon trang mieng" class="anh">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="trangmieng tauhu">
+                    <div>
+                        <div class="tauhu">
+                            
+                                <div class="bar top"></div>
+                                <div class="bar bottom"></div>
+                                <div class="bar left"></div>
+                                <div class="bar right"></div>
+                                <div class="text">Tau Hu Papa:<a href="https://maps.app.goo.gl/vBT86FsDtyexjLDa7">
+                                    482 Đ. Nguyễn Thái Sơn, Phường 5, Gò Vấp, Hồ Chí Minh 727214, Việt Nam</a></div>
+                                <img src="https://lh5.googleusercontent.com/p/AF1QipPhtrQQ1Wr_-SbIY8R1DMx-5kAKVLmhLpUDEW22=w203-h237-k-no"
+                                    alt="mon trang mieng" class="anh">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="trangmieng traicay">
+                    <div>
+                        <div class="traicay">
+                            
+                                <div class="bar top"></div>
+                                <div class="bar bottom"></div>
+                                <div class="bar left"></div>
+                                <div class="bar right"></div>
+                                <div class="text">Trái cây tô ngon nhất quả đất:<a href="https://maps.app.goo.gl/LZRtJidnx6tJ5DQCA">
+                                    4 Đ. Tô Hiến Thành, Phường 12, Quận 10, Hồ Chí Minh, Việt Nam</a></div>
+                                <img src="https://lh5.googleusercontent.com/p/AF1QipNM2SXEynY6x1Btcz94Byr8fmMJzEp0gpEmNpKc=w203-h253-k-no"
+                                    alt="mon trang mieng" class="anh">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="trangmieng panna">
+                    <div>
+                        <div class="panna">
+                            
+                                <div class="bar top"></div>
+                                <div class="bar bottom"></div>
+                                <div class="bar left"></div>
+                                <div class="bar right"></div>
+                                <div class="text">PANNA COTTA PI PEO'S:<a href="https://maps.app.goo.gl/9oQsJASdVdVW3uHS8">
+                                    79/6C2 Đ. Nguyễn Xí, Phường 26, Bình Thạnh, Hồ Chí Minh 70000, Việt Nam</a></div>
+                                <img src="https://lh5.googleusercontent.com/p/AF1QipPQLiGdPukOe3bVI1Jurrmx_-6TWbY1oGuhaWEj=w203-h271-k-no"
+                                    alt="mon trang mieng" class="anh">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="trangmieng che">
+                    <div>
+                        <div class="che">
+                            
+                                <div class="bar top"></div>
+                                <div class="bar bottom"></div>
+                                <div class="bar left"></div>
+                                <div class="bar right"></div>
+                                <div class="text">Quán Chè Thập Cẩm Phục Linh:<a href="https://maps.app.goo.gl/VL5j44NxGyGNaXJe8">
+                                    200 Đ. Lê Quang Sung, Phường 6, Quận 6, Hồ Chí Minh, Việt Nam </a></div>
+                                <img src="https://lh5.googleusercontent.com/p/AF1QipMo0rNW16UV2HZW6OYjaZ2FY-M54DcYgHi3TKVv=w203-h270-k-no"
+                                    alt="mon trang mieng" class="anh">
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="trangmieng kem">
+                    <div>
+                        <div class="kem">
+                            
+                                <div class="bar top"></div>
+                                <div class="bar bottom"></div>
+                                <div class="bar left"></div>
+                                <div class="bar right"></div>
+                                <div class="text">Kem cuộn thái lan Elly Nguyễn:<a href="https://maps.app.goo.gl/w5kPXhLfsoRt3ont7">
+                                    247 Đ. Tô Hiến Thành, Phường 12, Quận 10, Hồ Chí Minh, Việt Nam</a></div>
+                                <img src="https://lh5.googleusercontent.com/p/AF1QipO_1PMsrTpOqTFElrBnfafUoX8vlGIUFAoFG5s0=w408-h543-k-no"
+                                    alt="mon trang mieng" class="anh">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="trangmieng banh">
+                    <div>
+                        <div class="banh">
+                            
+                                <div class="bar top"></div>
+                                <div class="bar bottom"></div>
+                                <div class="bar left"></div>
+                                <div class="bar right"></div>
+                                <div class="text">Ngon Nhất Bakery:<a href="https://maps.app.goo.gl/JoxnoDxzp6fmW1Lj6">
+                                    945 Đ. Lê Văn Lương, Phước Kiển, Nhà Bè, Hồ Chí Minh 700000, Việt Nam</a></div>
+                                <img src="https://lh5.googleusercontent.com/p/AF1QipPPjuoiZRlBih0gek9PwdA7Mp7_flZR4lVbFNcA=w519-h240-k-no"
+                                    alt="mon trang mieng" class="anh">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="trangmieng mochi">
+                    <div>
+                        <div class="mochi">
+                            
+                                <div class="bar top"></div>
+                                <div class="bar bottom"></div>
+                                <div class="bar left"></div>
+                                <div class="bar right"></div>
+                                <div class="text">nhims BAKERY: Tiệm bánh Mochi chấm kem sữa
+                                    <a href="https://maps.app.goo.gl/rsZCe5HTwk7tTTUM9">118/127b, Phan Huy Ích, Phường 15, Tân Bình, Hồ Chí Minh 700000, Việt Nam</a></div>
+                                <img src="https://lh5.googleusercontent.com/p/AF1QipN7npLUF67lhedWEErRthzMV7PDe6Y7RhD8JQkP=w408-h544-k-no"
+                                    alt="mon trang mieng" class="anh">
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trangmieng tauhu">
+                    <div>
+                        <div class="tauhu">
+                            
+                                <div class="bar top"></div>
+                                <div class="bar bottom"></div>
+                                <div class="bar left"></div>
+                                <div class="bar right"></div>
+                                <div class="text">Tàu Hủ Xe Lam: Bửu Long
+                                    <a href="https://maps.app.goo.gl/6ShALaQfEYpULnWh9">B1B Bửu Long, Phường 15, Quận 10 B2 Bis, Bửu Long, Phường 15, Quận 10, Hồ Chí Minh
+                                    700000, Việt Nam</a></div>
+                                <img src="https://lh5.googleusercontent.com/p/AF1QipNKKv8CJ-Xhlcnz66geUWS_qhJWijubMOt4Ugjy=w203-h270-k-no"
+                                    alt="mon trang mieng" class="anh">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="trangmieng traicay">
+                    <div>
+                        <div class="traicay">
+                            
+                                <div class="bar top"></div>
+                                <div class="bar bottom"></div>
+                                <div class="bar left"></div>
+                                <div class="bar right"></div>
+                                <div class="text">Sinh Tố 241:<a href="https://maps.app.goo.gl/8rzgfW4X8A6tefdcA">
+                                    84 Đồng Đen, Phường 13, Tân Bình, Hồ Chí Minh, Việt Nam</a></div>
+                                <img src="https://lh5.googleusercontent.com/p/AF1QipOl41zFM4tLlJ4U9qRvRR_v2exOCHtDkYUe89Hm=w408-h306-k-no"
+                                    alt="mon trang mieng" class="anh">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="trangmieng panna">
+                    <div>
+                        <div class="panna">
+                            
+                                <div class="bar top"></div>
+                                <div class="bar bottom"></div>
+                                <div class="bar left"></div>
+                                <div class="bar right"></div>
+                                <div class="text">panna cotta desserts:<a href="https://maps.app.goo.gl/u3k9sm4MzjmUy4uM6">
+                                    51/20/34 Đ. 18B, Bình Hưng Hoà A, Bình Tân, Hồ Chí Minh, Việt Nam</a></div>
+                                <img src="https://lh5.googleusercontent.com/p/AF1QipMo5PtYPYGqISFaoqvovqLTo9bkq6tqSZn5zkKG=w331-h298-k-no"
+                                    alt="mon trang mieng" class="anh">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="trangmieng che">
+                    <div>
+                        <div class="che">
+                            
+                                <div class="bar top"></div>
+                                <div class="bar bottom"></div>
+                                <div class="bar left"></div>
+                                <div class="bar right"></div>
+                                <div class="text">Chè 476:<a href="https://maps.app.goo.gl/NYipk48CPueWxHAj9">
+                                    476 Đ. Nguyễn Thái Sơn, Phường 5, Gò Vấp, Hồ Chí Minh 700000, Việt Nam</a></div>
+                                <img src="https://lh5.googleusercontent.com/p/AF1QipMHDpWOBYUvFznlozsaPeemXO0jlVyFBI-YEi8=w203-h270-k-no"
+                                    alt="mon trang mieng" class="anh">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="trangmieng kem">
+                    <div>
+                        <div class="kem">
+                            
+                                <div class="bar top"></div>
+                                <div class="bar bottom"></div>
+                                <div class="bar left"></div>
+                                <div class="bar right"></div>
+                                <div class="text">Kem Vĩnh Sanh:<a href="https://maps.app.goo.gl/i6W2wj2suJCUE5FH7">
+                                    1120 Đ. 3 Tháng 2, Phường 12, Quận 11, Hồ Chí Minh, Việt Nam</a></div>
+                                <img src="https://lh5.googleusercontent.com/p/AF1QipPGF6en2Bvl1WIvpru3K2RcUZdeG2Ogc2xwdH08=w203-h152-k-no"
+                                    alt="mon trang mieng" class="anh">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="trangmieng banh">
+                    <div>
+                        <div class="banh">
+                            
+                                <div class="bar top"></div>
+                                <div class="bar bottom"></div>
+                                <div class="bar left"></div>
+                                <div class="bar right"></div>
+                                <div class="text">Tiệm Bánh Madi:<a href="https://maps.app.goo.gl/1aECdr2kVjvi6Hnx8">
+                                    103 Hoàng Trọng Mậu, Tân Hưng, Quận 7, Hồ Chí Minh, Việt Nam</a></div>
+                                <img src="https://lh5.googleusercontent.com/p/AF1QipPOf0l1JM7Vo8w9yGwDS0ilZKbcWqcyv2SS0QUU=w203-h203-k-no"
+                                    alt="mon trang mieng" class="anh">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="trangmieng mochi">
+                    <div>
+                        <div class="mochi">
+                            
+                                <div class="bar top"></div>
+                                <div class="bar bottom"></div>
+                                <div class="bar left"></div>
+                                <div class="bar right"></div>
+                                <div class="text">Bánh Mochi nhà Chí:<a href="https://maps.app.goo.gl/XmuYwitLTNCUCchp8">
+                                    212/6 Nguyễn Oanh, Phường 17, Gò Vấp, Hồ Chí Minh 700000, Việt Nam</a></div>
+                                <img src="https://lh5.googleusercontent.com/p/AF1QipMcE1OY2_utgwvBNqaLpAsYE09SeGz4DZHY2ykr=w203-h270-k-no"
+                                    alt="mon trang mieng" class="anh">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="trangmieng tauhu">
+                    <div>
+                        <div class="tauhu">
+                            
+                                <div class="bar top"></div>
+                                <div class="bar bottom"></div>
+                                <div class="bar left"></div>
+                                <div class="bar right"></div>
+                                <div class="text">Đậu Hủ Bùi Viện (Đậu Hủ Cô Thủy):<a href="https://maps.app.goo.gl/dfnfRSB3o4arw7Gi6">
+                                    207 Đ. Bùi Viện, Phường Phạm Ngũ Lão, Quận 1, Hồ Chí Minh, Việt Nam</a></div>
+                                <img src="https://lh5.googleusercontent.com/p/AF1QipMCE8IOcVGXgN5rif8LSFzyrehDZCFG6nJIFuJa=w203-h270-k-no"
+                                    alt="mon trang mieng" class="anh">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="trangmieng traicay">
+                    <div>
+                        <div class="traicay">
+                            
+                                <div class="bar top"></div>
+                                <div class="bar bottom"></div>
+                                <div class="bar left"></div>
+                                <div class="bar right"></div>
+                                <div class="text">Fruit Crush: Trái Cây Tươi & Ăn Vặt <a href="https://maps.app.goo.gl/zm2atwm3to4fqAGq7">Quận 11
+                                    93/4 đường 100 Bình Thới, Phường 14, Quận 11, Hồ Chí Minh, Việt Nam</a></div>
+                                <img src="https://lh5.googleusercontent.com/p/AF1QipNrliWkuMGBYNJxG3Y4zFmYkZU7pM244N_CJhJk=w203-h360-k-no"
+                                    alt="mon trang mieng" class="anh">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="trangmieng panna">
+                    <div>
+                        <div class="panna">
+                            
+                                <div class="bar top"></div>
+                                <div class="bar bottom"></div>
+                                <div class="bar left"></div>
+                                <div class="bar right"></div>
+                                <div class="text">SanTi Tím: Bánh Flan & PannaCotta
+                                    <a href="https://maps.app.goo.gl/uuXMmJX6LY5Ftcwe7">607 Lê Quang Định, Phường 1, Gò Vấp, Hồ Chí Minh, Việt Nam</a></div>
+                                <img src="https://lh5.googleusercontent.com/p/AF1QipN85RRz_FTmjFyVwy6ixIXN2n0MuT9KkBcvMU2L=w203-h270-k-no"
+                                    alt="mon trang mieng" class="anh">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+</body>
+    <footer>
+        <div class="flex1 footer_subject">
+            <div class="subject">
+                <div>
+                    <a class="logo1" href="/?initialPath=%2F&id=%3Ar1o%3A">
+                        <div><img src="logo.png" alt="logo"></div>
+                        <h2>DAKAFOODMAP</h2>
+                    </a>
+                </div>
+            </div>
+            <div class="subject">
+                <div>
+                    <ul>
+                        <li>
+                            <h4>THÔNG TIN LIÊN HỆ:</h4>
+                        </li>
+                        <li>SĐT:</li>
+                        <li>0987654321 (Đăng)</li>
+                        <li>0335415448 (Khánh)</li>
+                    </ul>
+                    <p>Địa chỉ: Lê Văn Lương, Phước Kiển, Nhà Bè, Tp. Hồ Chí Minh</p>
+                    <p>Email: dakafoodmap@gmail.com</p>
+                </div>
+            </div>
+            <div class="subject">
+                <div>
+                    <ul>
+                        <li>
+                            <h4>TÌM KIẾM:</h4>
+                        </li>
+                        <li><a href="timkiem.html#newshop">Quán mới</a></li>
+                        <li><a href="timkiem.html#trendshop">Quán đang hot</a></li>
+                        <li><a href="timkiem.html#nearshop">Quán gần đây</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="subject">
+                <div>
+                    <ul>
+                        <li>
+                            <h4>Nổi bật:</h4>
+                        </li>
+                        <li><a href="monanno.html">Món ăn no</a></li>
+                        <li><a href="nuocuong.html">Nước uống</a></li>
+                        <li><a href="anvat.html">Ăn vặt</a></li>
+                        <li><a href="trangmieng.html">Tráng miệng</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+</html>
